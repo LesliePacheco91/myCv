@@ -34,6 +34,10 @@ body, #container {
   border-radius: 40px;
 }
 
+.listMenu li{
+  cursor: pointer;
+}
+
 .titlePage{
   color: #fff;
 }
@@ -65,8 +69,20 @@ body, #container {
   padding: 3%;
 }
 
-.imgRed {
+.imgRed{
   width: 100%;
+}
+.imgContact {
+  width: 9%;
+  padding: 2%;
+}
+
+.tel, .dir, .email {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .photoinfo {
   width: 30%;
@@ -88,7 +104,6 @@ body, #container {
   width: 80%;
   padding: 1% 10%;
   justify-content: left;
-  margin-top: 3%;
 }
 
 #aboutme{
@@ -96,6 +111,16 @@ body, #container {
   padding: 2% 0;
   justify-content: center;
   margin-top: 6%;
+}
+
+.contact {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2%;
 }
 
 #couses, #experience{
@@ -155,7 +180,6 @@ body, #container {
   padding: 1% 10%;
   background: #00000036;
   justify-content: left;
-  margin-top: 3%;
 }
 
 
@@ -259,7 +283,13 @@ body, #container {
 }
 
 .btn-url , .buttonCV{
-  font-family: "Vollkorn", serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-style: normal;
+  font-weight: bold;
+}
+
+.menuActive{
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 18px;
 }

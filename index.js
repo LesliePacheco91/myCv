@@ -68,7 +68,7 @@ linkedin.href = arrayData.linkedin;
 
 let imgLinkedin = document.createElement('img');
 imgLinkedin.setAttribute("class","imgRed");
-imgLinkedin.src = 'img/linkedin.png';
+imgLinkedin.src = "img/linkedin2.png";
 
 linkedin.append(imgLinkedin);
 
@@ -78,7 +78,7 @@ git.href = arrayData.gitHub;
 
 let imgGit = document.createElement('img');
 imgGit.setAttribute("class","imgRed");
-imgGit.src = 'img/githubPurple.png';
+imgGit.src = 'img/githubPurple2.png';
 
 git.append(imgGit);
 
@@ -104,11 +104,47 @@ buttonCv.download = 'cv.pdf';
 let contact = document.createElement("div");
 contact.setAttribute("class","contact");
 
+// telefono
+let celfon = document.createElement("div");
+celfon.className = "tel"
+let imgCel = document.createElement("img");
+imgCel.className = "imgContact";
+imgCel.src = "img/celfon.png";
+let titleCel = document.createElement("h5");
+titleCel.textContent = arrayData.contact.phone;
+
+celfon.append(imgCel, titleCel);
+
+// ubicación 
+let adreees = document.createElement("div");
+adreees.className = "dir"
+let imgAd = document.createElement("img");
+imgAd.className = "imgContact";
+imgAd.src = "img/adress.png";
+let titleAd = document.createElement("h5");
+titleAd.textContent = arrayData.contact.address;
+
+adreees.append(imgAd, titleAd);
+
+
+// email 
+let ema = document.createElement("div");
+ema.className = "email"
+let imgEm = document.createElement("img");
+imgEm.className = "imgContact";
+imgEm.src = "img/email.png";
+let titleEm = document.createElement("h5");
+titleEm.textContent = arrayData.contact.email;
+
+ema.append(imgEm, titleEm);
+
+contact.append(celfon, adreees, ema);
+
 
 
 aboutme.append(titleAboutMe, textAbotuMe,buttonCv );
 photoinfo.append(photo, nameInfo,titleinfo, socilaRed);
-sectionAboutme.append(photoinfo, aboutme);
+sectionAboutme.append(photoinfo, aboutme,contact);
 
 
 // skills section
@@ -321,24 +357,55 @@ container.append(header, sectionAboutme, skillsSection, proyectSection, couserSe
 lis1.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
     sectionAboutme.scrollIntoView({ behavior: 'smooth' });
+
+    lis1.setAttribute("class","menuActive");
+    lis2.removeAttribute("class","menuActive");
+    lis3.removeAttribute("class","menuActive");
+    lis4.removeAttribute("class","menuActive");
+    lis5.removeAttribute("class","menuActive");
+
 });
 
 lis2.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
     skillsSection.scrollIntoView({ behavior: 'smooth' });
+
+    lis2.setAttribute("class","menuActive");
+    lis1.removeAttribute("class","menuActive");
+    lis3.removeAttribute("class","menuActive");
+    lis4.removeAttribute("class","menuActive");
+    lis5.removeAttribute("class","menuActive");
 });
 
 lis3.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
     proyectSection.scrollIntoView({ behavior: 'smooth' });
+
+    lis3.setAttribute("class","menuActive");
+    lis1.removeAttribute("class","menuActive");
+    lis2.removeAttribute("class","menuActive");
+    lis4.removeAttribute("class","menuActive");
+    lis5.removeAttribute("class","menuActive");
 });
 
 lis4.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
     couserSection.scrollIntoView({ behavior: 'smooth' });
+    
+    lis4.setAttribute("class","menuActive");
+    lis1.removeAttribute("class","menuActive");
+    lis2.removeAttribute("class","menuActive");
+    lis3.removeAttribute("class","menuActive");
+    lis5.removeAttribute("class","menuActive");
 });
 
 lis5.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
     experienceSection.scrollIntoView({ behavior: 'smooth' });
+
+    lis5.setAttribute("class","menuActive");
+    lis1.removeAttribute("class","menuActive");
+    lis2.removeAttribute("class","menuActive");
+    lis3.removeAttribute("class","menuActive");
+    lis4.removeAttribute("class","menuActive");
 });
