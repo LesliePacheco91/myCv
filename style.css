@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+body, #container {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #670ed2;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#container{
+  width: 100%;
+}
+
+
+.headerInfo {
+  position: fixed;
+  top: 14px;
+  width: 50%;
+  background: #45088ee0;
+  padding: 0 2% 0 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 40px;
+}
+
+.titlePage{
+  color: #fff;
+}
+
+.menu{
+	width: 70%;
+}
+
+.list-kills-tech, .list-soft-skills, .list-proyects, .listMenu{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  padding: 0;
+}
+
+.redes {
+  width: 69%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.redes a {
+  width: 10%;
+  padding: 3%;
+}
+
+.imgRed {
+  width: 100%;
+}
+.photoinfo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#aboutme, #skills , #proyects{
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+#proyects, #experience{
+  width: 80%;
+  padding: 1% 10%;
+  justify-content: left;
+  margin-top: 3%;
+}
+
+#aboutme{
+  width: 100%;
+  padding: 2% 0;
+  justify-content: center;
+  margin-top: 6%;
+}
+
+#couses, #experience{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.exprience h2, .exprience h4, .exprience h5, .exprience ul {
+  margin: 6px 0 6px 0;
+}
+.exprience h4{
+  color:#2b015e;
+}
+
+
+.listCurses, .listexpe{ 
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fff;
+  width: 100%;
+  padding: 0;
+}
+
+.curse {
+  width: 40%;
+  margin-right: 3%;
+  border-left: 4px solid #2b015e;
+  padding-left: 1em;
+}
+
+.curse h4, .curse p{
+  margin: 0;
+}
+
+.curse h4{
+  color: #ae6bff;
+}
+
+.curse h2{
+  margin-bottom: 0;
+}
+
+.curse a {
+  margin-top: 0;
+  color: #ffd700;
+}
+
+#skills, #couses {
+  width: 80%;
+  padding: 1% 10%;
+  background: #00000036;
+  justify-content: left;
+  margin-top: 3%;
+}
+
+
+.exprience {
+  width: 70%;
+  margin-bottom: 2em;
+}
+.photo {
+  width: 12em;
+  height: 11.5em;
+  border-radius: 100%;
+}
+
+.textAbotuME {
+  width: 60%;
+}
+
+.name, .title{
+	margin: 2% 0 0 0;
+}
+
+.textAbotuME p{
+  margin-bottom: 2em;
+}
+.buttonCV {
+  padding: 11px 20px 11px 20px;
+  background: #ffd700;
+  border: 0;
+  border-radius: 13px;
+  color: #000;
+  margin-top: 2%;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.imgSkill {
+  width: 100%;
+}
+
+.imgSSoftkill{
+  width: 45%;
+}
+.Softskill {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 12%;
+}
+
+.skill {
+  width: 5%;
+}
+#skills h1, #skills h3{
+  width: 100%;
+}
+
+.cardProyect{
+  width: 30%;
+}
+
+.imageProyect{
+  width: 100%;
+  border-radius: 13px;
+}
+
+.cardProyect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2%;
+  background: #00000036;
+  border-radius: 21px;
+}
+
+.cardProyect h3{
+  margin-top: 0;
+}
+
+.contentIcons {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentIcons img {
+  width: 50%;
+}
+
+.btn-url {
+  width: 53%;
+  height: 3em;
+  background: #ffd700;
+  border: 0;
+  color: #000;
+  border-radius: 11px;
+  font-weight: bold;
+}
+
+.btn-url , .buttonCV{
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
