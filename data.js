@@ -13,10 +13,23 @@ export default{
         "summary": "Ingeniera en Sistemas Computacionales y Desarrolladora Web con más de 3 años de experiencia en la industria. Mi especialización en Front-end, combinada con mi pasión por el diseño y la programación, me ha permitido crear soluciones tecnológicas innovadoras que optimizan la eficiencia y facilitan el logro de objetivos. El en trabajo en equipo, autoaprendizaje, adaptabilidad y mi creatividad ha sido clave para implementar soluciones efectivas y superar desafíos con éxito. Me rijo por principios de honestidad, responsabilidad y organización, y estoy profundamente comprometida con el avance tecnológico y su impacto positivo en la sociedad.",
         "experience": [
           {
-            "company": "Empresa de Desarrollo",
+            "company": "Universidad Técnológica del Mayab",
+            "position": "Profesor de agintatura",
+            "startDate": "07-2015",
+            "endDate": "01-2024",
+            "responsibilities": [
+                "Diseño de planes de estudio y programas académicos",
+                "Impartición de clases teóricas y prácticas",
+                "Evaluación del progreso de los estudiantes mediante proyectos funcionales.",
+                "Creacion de talleres para el refuerzo de conosimintos.",
+                "Actualización constante en nuevas tecnologías.",
+            ]
+          },
+          {
+            "company": "Grupo Git",
             "position": "Desarrolladora Web Junior",
-            "startDate": "2022-01",
-            "endDate": "2024-07",
+            "startDate": "01-2015",
+            "endDate": "05-2015",
             "responsibilities": [
               "Desarrollar y mantener aplicaciones web utilizando HTML, CSS y JavaScript.",
               "Colaborar con el equipo de diseño para implementar interfaces de usuario responsivas.",
@@ -24,10 +37,10 @@ export default{
             ]
           },
           {
-            "company": "Startup Tecnológica",
+            "company": "YoCo",
             "position": "Pasante de Desarrollo Web",
-            "startDate": "2021-06",
-            "endDate": "2021-12",
+            "startDate": "05/2014",
+            "endDate": "12/2014",
             "responsibilities": [
               "Asistir en el desarrollo de funcionalidades front-end.",
               "Participar en reuniones de planificación de proyectos.",
@@ -36,56 +49,69 @@ export default{
           }
         ],
         "couses":[
-
-            {
-                "id":"1",
-                "name":"name curse",
-                "date":"date",
-                "academy":"udemy",
-                "document":"document",
-                "url": "url",
-            },
             {
                 "id":"2",
-                "name":"name curse",
-                "date":"date",
-                "academy":"udemy",
-                "document":"document",
-                "url": "url",
+                "name":"Curso de Introducción a MongoDB",
+                "date":" 20/05/2024",
+                "academy":"Platzy",
+                "url": "https://platzi.com/p/lesliepacheco62/curso/4987-mongodb/diploma/detalle/",
             },
 
             {
-                "id":"1",
-                "name":"name curse",
-                "date":"date",
-                "academy":"udemy",
-                "document":"document",
-                "url": "url",
+                "id":"2",
+                "name":"Curso de Fundamentos de Diseño de Interfaces UX/UI",
+                "date":" 29/02/2024",
+                "academy":"Platzy",
+                "url": "https://platzi.com/p/lesliepacheco62/curso/5184-course/diploma/detalle/",
             },
             {
                 "id":"2",
-                "name":"name curse",
-                "date":"date",
-                "academy":"udemy",
-                "document":"document",
-                "url": "url",
+                "name":"Curso Avanzado de Realidad Aumentada",
+                "date":" 20/01/2023",
+                "academy":"Platzy",
+                "url": "https://platzi.com/p/lesliepacheco62/curso/5184-course/diploma/detalle/",
+            },
+            {
+                "id":"1",
+                "name":"Curso completo de Hacking Ético y Ciberseguridad",
+                "date":" 11/12/2022",
+                "academy":"Udemy",
+                "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-435edcf5-fb3b-4d33-98a2-ff4d7d87dd7b.jpg?v=1670810701000",
+            },
+            {
+                "id":"2",
+                "name":" Fundamentos de la Gerencia de Proyectos",
+                "date":"11/12/2022",
+                "academy":"Udemy",
+                "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-49f9a6e8-4350-442c-92f6-d89f5248e231.jpg?v=1670810865000",
             },
 
             {
                 "id":"1",
-                "name":"name curse",
-                "date":"date",
-                "academy":"udemy",
-                "document":"document",
-                "url": "url",
+                "name":"Angular: De cero a experto (Legacy)",
+                "date":"11/12/2022",
+                "academy":"Udemy",
+                "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-d9e5ae9c-859c-41fb-8f92-d6236bdc2d99.jpg?v=1670810385000",
+            },  {
+                "id":"2",
+                "name":" Máster en PHP 8, POO, MVC, MySQL, Laravel 8, CodeIgniter 4",
+                "date":"29/07/2019",
+                "academy":"Udemy",
+                "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-BXR8E2Q9.jpg?v=1675527783000",
+            },
+            {
+                "id":"1",
+                "name":"Desarrollo de sistemas web en PHP 7 POO, MySQL, Jquery Ajax",
+                "date":"31/08/2018",
+                "academy":"Udemy",
+                "url": "https://www.udemy.com/certificate/UC-5TA1VAMT/",
             },
             {
                 "id":"2",
-                "name":"name curse",
-                "date":"date",
-                "academy":"udemy",
-                "document":"document",
-                "url": "url",
+                "name":"Bases de datos en Internet: MySQLi ¡Fácil y práctico!",
+                "date":" 30/09/2018",
+                "academy":"Udemy",
+                "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-9PLLQPLM.jpg?v=1698016705000",
             }
         ],
         "education": [
@@ -112,30 +138,14 @@ export default{
                 "id":"3",
                 "image":"img/skills/js.png",
                 "name":"Javascript"
-            },
-            {
-                "id":"4",
-                "image":"img/skills/bootstrap.png",
+            }, {
+                "id":"10",
+                "image":"img/skills/nodejs.png",
                 "name":"HTML"
             },
             {
                 "id":"5",
                 "image":"img/skills/php.png",
-                "name":"HTML"
-            },
-            {
-                "id":"6",
-                "image":"img/skills/mysql.png",
-                "name":"HTML"
-            },
-            {
-                "id":"7",
-                "image":"img/skills/laravel.jpg",
-                "name":"HTML"
-            },
-            {
-                "id":"8",
-                "image":"img/skills/figma.png",
                 "name":"HTML"
             },
             {
@@ -146,6 +156,66 @@ export default{
             {
                 "id":"10",
                 "image":"img/skills/github.png",
+                "name":"HTML"
+            },
+            {
+                "id":"10",
+                "image":"img/skills/mongodb-icon.png",
+                "name":"mongoDb"
+            },
+            {
+                "id":"6",
+                "image":"img/skills/mysql.png",
+                "name":"HTML"
+            },
+            {
+                "id":"10",
+                "image":"img/skills/apache.svg",
+                "name":"apache"
+            },
+            {
+                "id":"10",
+                "image":"img/skills/firebase.png",
+                "name":"HTML"
+            },
+            {
+                "id":"10",
+                "image":"img/skills/postman-logo.png",
+                "name":"HTML"
+            },
+            {
+                "id":"10",
+                "image":"img/skills/jest.png",
+                "name":"HTML"
+            },
+            {
+                "id":"10",
+                "image":"img/skills/eslint.png",
+                "name":"HTML"
+            },
+            {
+                "id":"10",
+                "image":"img/skills/npm-icon.png",
+                "name":"HTML"
+            },
+            {
+                "id":"4",
+                "image":"img/skills/bootstrap.png",
+                "name":"HTML"
+            },
+            {
+                "id":"10",
+                "image":"img/skills/notion.svg",
+                "name":"HTML"
+            },
+            {
+                "id":"8",
+                "image":"img/skills/figma.png",
+                "name":"HTML"
+            },
+            {
+                "id":"8",
+                "image":"img/skills/trello.png",
                 "name":"HTML"
             },
         ],
@@ -208,12 +278,14 @@ export default{
                     },
                 ],
                 "url":"https://lesliepacheco91.github.io/DEV011-text-analyzer/",
-                "repository":"https://github.com/LesliePacheco91/DEV011-text-analyzer/tree/main",
+                "repository":"https://github.com/LesliePacheco91/DEV011-text-analyzer/tree/gh-pages",
             }, {
                 "id":"2",
                 "name":"Sistema de evaluación docente",
                 "description":"Aplicación web que tiene la funcionalidad de generar los resultados obtenidos de la evaluación docente realizados por los alumnos mediante un formulario web.",
                 "image":"img/portafolio/2.png",
+                "url":"https://lesliepacheco91.github.io/DEV011-text-analyzer/",
+                "repository":"https://github.com/LesliePacheco91/DEV011-text-analyzer/tree/main",
                 "languales":[
                     {
                         "id":"1",
@@ -246,8 +318,204 @@ export default{
                         "name":"HTML"
                     },
                 ],
-                "url":"https://lesliepacheco91.github.io/DEV011-text-analyzer/",
-                "repository":"https://github.com/LesliePacheco91/DEV011-text-analyzer/tree/main",
+            },
+            {
+                "id":"3",
+                "name":"Data Lovers",
+                "description":"Aplicación basada en personajes de 'Rick y Morty' que incluye funcionalidades como tarjetas, filtrado, ordenamiento, limpieza de filtros y estadísticas. Uno de nuestros principales desafíos fue la integración de datos estadísticos, superado gracias al trabajo en equipo para obtener la información necesaria.",
+                "image":"img/portafolio/img1.png",
+                "url":"https://lesliepacheco91.github.io/DEV011-data-lovers/src/",
+                "repository":"https://github.com/LesliePacheco91/DEV011-data-lovers",
+                "languales":[
+                    {
+                        "id":"1",
+                        "image":"img/skills/html-5.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"2",
+                        "image":"img/skills/css-3.png",
+                        "name":"CSS"
+                    },
+                    {
+                        "id":"3",
+                        "image":"img/skills/js.png",
+                        "name":"Javascript"
+                    },
+                    {
+                        "id":"4",
+                        "image":"img/skills/bootstrap.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"5",
+                        "image":"img/skills/php.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"6",
+                        "image":"img/skills/mysql.png",
+                        "name":"HTML"
+                    },
+                ]
+            }, {
+                "id":"3",
+                "name":"Social NetWork ",
+                "description":"Red social dedicada a reseñas gastronómicas que permite calificar establecimientos, ubicarlos geográficamente, utilizar la función 'Me gusta', editar/eliminar publicaciones y acceso mediante credenciales o cuenta de Google.Enfrentamos desafíos como la implementación de la función de 'Me gusta' y la gestión de imágenes cargadas en Firebase",
+                "image":"img/portafolio/1.png",
+                "url":"https://lesliepacheco91.github.io/DEV011-data-lovers/src/",
+                "repository":"https://github.com/LesliePacheco91/DEV011-social-network/tree/main",
+                "languales":[
+                    {
+                        "id":"1",
+                        "image":"img/skills/html-5.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"2",
+                        "image":"img/skills/css-3.png",
+                        "name":"CSS"
+                    },
+                    {
+                        "id":"3",
+                        "image":"img/skills/js.png",
+                        "name":"Javascript"
+                    },
+                    {
+                        "id":"4",
+                        "image":"img/skills/bootstrap.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"5",
+                        "image":"img/skills/php.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"6",
+                        "image":"img/skills/mysql.png",
+                        "name":"HTML"
+                    },
+                ]
+            },  {
+                "id":"3",
+                "name":"MdLinks",
+                "description":"Librería que tiene como objetivo leer archivos Markdown, analizar su contenido, listar los enlaces que contienen, validar estos enlaces y mostrar sus estados, además de proporcionar datos estadísticos. La librería fue desplegada en la plataforma NPMJS.",
+                "image":"img/portafolio/mdl2.png",
+                "url":"https://www.npmjs.com/package/lp-md-links",
+                "repository":"https://github.com/LesliePacheco91/DEV011-md-links/tree/publicacion",
+                "languales":[
+                    {
+                        "id":"1",
+                        "image":"img/skills/html-5.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"2",
+                        "image":"img/skills/css-3.png",
+                        "name":"CSS"
+                    },
+                    {
+                        "id":"3",
+                        "image":"img/skills/js.png",
+                        "name":"Javascript"
+                    },
+                    {
+                        "id":"4",
+                        "image":"img/skills/bootstrap.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"5",
+                        "image":"img/skills/php.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"6",
+                        "image":"img/skills/mysql.png",
+                        "name":"HTML"
+                    },
+                ]
+            },
+            {
+                "id":"3",
+                "name":"Burger queen api",
+                "description":"descripcion",
+                "image":"img/portafolio/BurgerQueen.png",
+                "url":"https://www.npmjs.com/package/lp-md-links",
+                "repository":"https://github.com/LesliePacheco91/DEV011-md-links",
+                "languales":[
+                    {
+                        "id":"1",
+                        "image":"img/skills/html-5.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"2",
+                        "image":"img/skills/css-3.png",
+                        "name":"CSS"
+                    },
+                    {
+                        "id":"3",
+                        "image":"img/skills/js.png",
+                        "name":"Javascript"
+                    },
+                    {
+                        "id":"4",
+                        "image":"img/skills/bootstrap.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"5",
+                        "image":"img/skills/php.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"6",
+                        "image":"img/skills/mysql.png",
+                        "name":"HTML"
+                    },
+                ]
+            },
+            {
+                "id":"3",
+                "name":"La Michoacana",
+                "description":"descripcion",
+                "image":"img/portafolio/LaMichoacana.png",
+                "url":"https://www.npmjs.com/package/lp-md-links",
+                "repository":"https://github.com/LesliePacheco91/laMichoacana",
+                "languales":[
+                    {
+                        "id":"1",
+                        "image":"img/skills/html-5.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"2",
+                        "image":"img/skills/css-3.png",
+                        "name":"CSS"
+                    },
+                    {
+                        "id":"3",
+                        "image":"img/skills/js.png",
+                        "name":"Javascript"
+                    },
+                    {
+                        "id":"4",
+                        "image":"img/skills/bootstrap.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"5",
+                        "image":"img/skills/php.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"6",
+                        "image":"img/skills/mysql.png",
+                        "name":"HTML"
+                    },
+                ]
             }
 
         ],

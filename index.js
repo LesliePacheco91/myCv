@@ -31,11 +31,8 @@ lis4.textContent = "Cursos";
 let lis5 = document.createElement('li');
 lis5.textContent = "Experiencia";
 
-
 list.append(lis1,lis2, lis3, lis4, lis5);
-
 contendMenu.append(list);
-
 header.append(titlPage, contendMenu);
 
 
@@ -212,6 +209,9 @@ titleProyects.textContent = "Proyectos";
 let listProtects = document.createElement('ul');
 listProtects.className = "list-proyects";
 
+
+// modalDetalle 
+
 arrayData.proyects.forEach(doc =>{
 
     let dataProyect = document.createElement('li');
@@ -224,14 +224,36 @@ arrayData.proyects.forEach(doc =>{
     imgProyect.className = "imageProyect";
     imgProyect.src = doc.image;
 
+    let contedDescripcion = document.createElement('div');
+    contedDescripcion.className = "contendDescrip";
+    contedDescripcion.setAttribute("id","contendDescrip");
+
     let descriptionProyect = document.createElement('p');
     descriptionProyect.className = "descriptionProyect";
+    descriptionProyect.setAttribute("id","descProyect");
     descriptionProyect.textContent = doc.description;
+
+    let lisLenguale = document.createElement('ul');
+
+    doc.languales.forEach(lan=>{
+
+        let languaje = document.createElement('li');
+        languaje.className ="languaje";
+
+        let imgLanguaje = document.createElement('img');
+        imgLanguaje.src = lan.image;
+
+        languaje.append(imgLanguaje);
+
+        lisLenguale.append(languaje);
+        
+    });
 
   
     let urlProyect = document.createElement('a');
     urlProyect.className = "urlProyect";
     urlProyect.href = doc.url;
+    urlProyect.target = "blank";
 
     let iconUrl = document.createElement('img');
     iconUrl.src = "img/vistas.png";
@@ -241,6 +263,7 @@ arrayData.proyects.forEach(doc =>{
     let urlRespository = document.createElement('a');
     urlRespository.className = "urlRespository";
     urlRespository.href = doc.repository;
+    urlRespository.target = "blank";
 
     let iconRespository = document.createElement('img');
     iconRespository.src = "img/github.png";
@@ -254,11 +277,42 @@ arrayData.proyects.forEach(doc =>{
     buttonUrl.className = "btn-url";
     buttonUrl.textContent = "Ver Detalle";
 
-    divIcons.append(urlProyect, urlRespository, buttonUrl);
-    
-    dataProyect.append( titleProyect, imgProyect, descriptionProyect, divIcons);
-    listProtects.append(dataProyect);
+    let buttonCloseCarActive = document.createElement('button');
+    buttonCloseCarActive.textContent = "X";
+    buttonCloseCarActive.className ="btn-close";
+    buttonCloseCarActive.setAttribute("id","btn-close");
 
+    buttonUrl.addEventListener('click', function(event) {
+          event.preventDefault();
+  
+          dataProyect.setAttribute("id","activeCard");
+          imgProyect.setAttribute("id","imgActiveCard");
+          contedDescripcion.removeAttribute("id","contendDescrip");
+          buttonUrl.setAttribute("id","btnDisable");
+          divIcons.setAttribute("id","contentIconsActive");
+          buttonCloseCarActive.removeAttribute("class","btn-close");
+
+      });
+
+
+
+      buttonCloseCarActive.addEventListener('click', function(event) {
+        event.preventDefault();
+        dataProyect.removeAttribute("id","activeCard");
+        imgProyect.removeAttribute("id","imgActiveCard");
+        contedDescripcion.setAttribute("id","contendDescrip");
+        buttonUrl.removeAttribute("id","btnDisable");
+        divIcons.removeAttribute("id","contentIconsActive");
+        buttonCloseCarActive.setAttribute("class","btn-close");
+      })
+
+
+      contedDescripcion.append(descriptionProyect, lisLenguale);
+
+    divIcons.append(urlProyect, urlRespository, buttonUrl);
+        
+    dataProyect.append( titleProyect,buttonCloseCarActive, imgProyect,  contedDescripcion, divIcons);
+    listProtects.append(dataProyect);
 
 });
 
@@ -283,7 +337,7 @@ arrayData.couses.forEach(cur =>{
     let datacurses = document.createElement('li');
     datacurses.setAttribute("class","curse");
 
-    let titlecurse = document.createElement('h2');
+    let titlecurse = document.createElement('h3');
     titlecurse.textContent = cur.name;
     
     let academyCurse = document.createElement('h4');
@@ -294,6 +348,7 @@ arrayData.couses.forEach(cur =>{
     let urlcurse = document.createElement('a');
     urlcurse.href = cur.url;
     urlcurse.textContent = "Ver curso";
+    urlcurse.target = "blank"
     datacurses.append(titlecurse, academyCurse, dateCurse, urlcurse);
 
     listCurses.append(datacurses);
@@ -310,7 +365,7 @@ experienceSection.setAttribute('id', 'experience');
 
 
 let titleexperience = document.createElement('h1');
-titleexperience.textContent = "Experiencia Profecional";
+titleexperience.textContent = "Experiencia";
 
 let listexperience = document.createElement('ul');
 listexperience.className = "listexpe";
@@ -328,7 +383,7 @@ arrayData.experience.forEach(ex =>{
     positionExperience.textContent = ex.position
 
     let dateExperience = document.createElement('h5');
-    dateExperience.textContent = `${ex.startDate} - ${ex.endDate}`;
+    dateExperience.textContent = `${ex.startDate} | ${ex.endDate}`;
 
     let descriptionExperience = document.createElement('ul');
 
@@ -340,9 +395,6 @@ arrayData.experience.forEach(ex =>{
 
     
     dataExperi.append(titleExprience, positionExperience,dateExperience, descriptionExperience);
-
-
-    console.log(ex);
 
     listexperience.append(dataExperi);
 })
