@@ -115,11 +115,26 @@ export default{
             }
         ],
         "education": [
+            {
+               "institution":"Salesforce Platform Developer - SalesForce & Laboratoria ",
+               "degree": "Trailhead",
+               "startDate": "2024",
+               "endDate": "2024",
+           },
+            
           {
-            "institution": "Universidad Ejemplo",
-            "degree": "Licenciatura en Informática",
-            "startDate": "2018-09",
-            "endDate": "2022-05"
+             "institution":"Bootcamp Laboratoria",
+            "degree": "Desarrollo web",
+            "startDate": "2023",
+            "endDate": "2024",
+            "url": "img/laboratora.pdf",
+          },
+          {
+            "institution": "Instito Tecnológico Superior del Sur del Estado de Yucatán (TSSY)",
+            "degree": "Ingeniería en Sistemas computacionales",
+            "startDate": "2009",
+            "endDate": "2014",
+            "url": "img/TITULO.jpg"
           }
         ],
         "techSkills": [
@@ -258,8 +273,10 @@ export default{
             {
                 "id":"1",
                 "name":"Text Analiser",
-                "description":"Aplicación que se encarga de realizar el conteo de palabras, caracteres y numero al ingresar una cadena de texto.",
+                "description":"Aplicación que tiene la finalidad de analizar un texto en el navegador mostrando en tiempo real una serie de indicadores y métricas específicas sobre caracteres, letras y números.",
                 "image":"img/portafolio/Screenshot1.png",
+                "url":"https://lesliepacheco91.github.io/DEV011-text-analyzer/",
+                "repository":"https://github.com/LesliePacheco91/DEV011-text-analyzer/tree/gh-pages",
                 "languales":[
                     {
                         "id":"1",
@@ -277,15 +294,11 @@ export default{
                         "name":"Javascript"
                     },
                 ],
-                "url":"https://lesliepacheco91.github.io/DEV011-text-analyzer/",
-                "repository":"https://github.com/LesliePacheco91/DEV011-text-analyzer/tree/gh-pages",
             }, {
                 "id":"2",
                 "name":"Sistema de evaluación docente",
-                "description":"Aplicación web que tiene la funcionalidad de generar los resultados obtenidos de la evaluación docente realizados por los alumnos mediante un formulario web.",
+                "description":"Desarrollé una aplicación para automatizar el proceso de evaluación docente en la Universidad Tecnológica de Mayab. Esta aplicación permite a los estudiantes realizar evaluaciones a través de un formulario web y genera resultados automáticos, presentándolos con gráficos visuales. La plataforma admite sesiones multiusuario y ha mejorado la eficiencia del proceso en un 60%, eliminando completamente el error humano. Los resultados se preparan y presentan en un documento PDF.",
                 "image":"img/portafolio/2.png",
-                "url":"https://lesliepacheco91.github.io/DEV011-text-analyzer/",
-                "repository":"https://github.com/LesliePacheco91/DEV011-text-analyzer/tree/main",
                 "languales":[
                     {
                         "id":"1",
@@ -322,7 +335,7 @@ export default{
             {
                 "id":"3",
                 "name":"Data Lovers",
-                "description":"Aplicación basada en personajes de 'Rick y Morty' que incluye funcionalidades como tarjetas, filtrado, ordenamiento, limpieza de filtros y estadísticas. Uno de nuestros principales desafíos fue la integración de datos estadísticos, superado gracias al trabajo en equipo para obtener la información necesaria.",
+                "description":"La aplicación proporciona información organizada y accesible sobre los personajes de la serie 'Rick y Morty'. Sus características principales incluyen la exhibición de tarjetas de personajes en la pantalla principal, capacidad de filtrado según género, estado de vida y especie, ordenamiento de resultados de manera ascendente o descendente, un botón de limpieza de filtros, presentación de datos estadísticos y acceso a detalles adicionales de cada personaje. Se realizaron pruebas unitarias utilizando la herramienta Jest y se obtuvo un 95 % de aceptación.",
                 "image":"img/portafolio/img1.png",
                 "url":"https://lesliepacheco91.github.io/DEV011-data-lovers/src/",
                 "repository":"https://github.com/LesliePacheco91/DEV011-data-lovers",
@@ -344,26 +357,20 @@ export default{
                     },
                     {
                         "id":"4",
-                        "image":"img/skills/bootstrap.png",
+                        "image":"img/skills/jest.png",
                         "name":"HTML"
                     },
                     {
                         "id":"5",
-                        "image":"img/skills/php.png",
-                        "name":"HTML"
-                    },
-                    {
-                        "id":"6",
-                        "image":"img/skills/mysql.png",
+                        "image":"img/skills/git.png",
                         "name":"HTML"
                     },
                 ]
             }, {
                 "id":"3",
                 "name":"Social NetWork ",
-                "description":"Red social dedicada a reseñas gastronómicas que permite calificar establecimientos, ubicarlos geográficamente, utilizar la función 'Me gusta', editar/eliminar publicaciones y acceso mediante credenciales o cuenta de Google.Enfrentamos desafíos como la implementación de la función de 'Me gusta' y la gestión de imágenes cargadas en Firebase",
-                "image":"img/portafolio/1.png",
-                "url":"https://lesliepacheco91.github.io/DEV011-data-lovers/src/",
+                "description":"Red social para la publicación de reseñas gastronómicas, donde los usuarios pueden opinar sobre diversos establecimientos culinarios. Cada reseña incluye elementos como la calificación y la ubicación del lugar. La plataforma permite expresar aprobación mediante la función de 'Me gusta' y otorga a los autores la capacidad de editar o eliminar sus publicaciones. El acceso a la aplicación se realiza a través de credenciales de usuario y contraseña, o mediante una cuenta de Google. Se realizaron pruebas unitarias utilizando la herramienta Jest, con un 85 % de aceptación.",
+                "image":"img/portafolio/GastroTour.png",
                 "repository":"https://github.com/LesliePacheco91/DEV011-social-network/tree/main",
                 "languales":[
                     {
@@ -383,56 +390,56 @@ export default{
                     },
                     {
                         "id":"4",
-                        "image":"img/skills/bootstrap.png",
+                        "image":"img/skills/eslint.png",
                         "name":"HTML"
                     },
                     {
                         "id":"5",
-                        "image":"img/skills/php.png",
+                        "image":"img/skills/firebase.svg",
                         "name":"HTML"
                     },
                     {
                         "id":"6",
-                        "image":"img/skills/mysql.png",
+                        "image":"img/skills/git.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"6",
+                        "image":"img/skills/jest.png",
                         "name":"HTML"
                     },
                 ]
             },  {
                 "id":"3",
                 "name":"MdLinks",
-                "description":"Librería que tiene como objetivo leer archivos Markdown, analizar su contenido, listar los enlaces que contienen, validar estos enlaces y mostrar sus estados, además de proporcionar datos estadísticos. La librería fue desplegada en la plataforma NPMJS.",
+                "description":"La librería tiene el objetivo de leer el archivo markdow, leer el contenido, enlistar los links que esta contiene, al validarlas muestra los estatus de los links y muestra los datos estadísticos de la misma. La librería fue desplegada en la plataforma NPMJS.",
                 "image":"img/portafolio/mdl2.png",
                 "url":"https://www.npmjs.com/package/lp-md-links",
                 "repository":"https://github.com/LesliePacheco91/DEV011-md-links/tree/publicacion",
                 "languales":[
                     {
                         "id":"1",
-                        "image":"img/skills/html-5.png",
+                        "image":"img/skills/nodejs.png",
                         "name":"HTML"
                     },
                     {
                         "id":"2",
-                        "image":"img/skills/css-3.png",
+                        "image":"img/skills/js.png",
                         "name":"CSS"
                     },
                     {
                         "id":"3",
-                        "image":"img/skills/js.png",
+                        "image":"img/skills/eslint.png",
                         "name":"Javascript"
                     },
                     {
                         "id":"4",
-                        "image":"img/skills/bootstrap.png",
+                        "image":"img/skills/npm-icon.png",
                         "name":"HTML"
                     },
                     {
                         "id":"5",
-                        "image":"img/skills/php.png",
-                        "name":"HTML"
-                    },
-                    {
-                        "id":"6",
-                        "image":"img/skills/mysql.png",
+                        "image":"img/skills/github.png",
                         "name":"HTML"
                     },
                 ]
@@ -440,19 +447,18 @@ export default{
             {
                 "id":"3",
                 "name":"Burger queen api",
-                "description":"descripcion",
-                "image":"img/portafolio/BurgerQueen.png",
-                "url":"https://www.npmjs.com/package/lp-md-links",
-                "repository":"https://github.com/LesliePacheco91/DEV011-md-links",
+                "description":"Esta API REST maneja consultas entrantes y proporciona datos obtenidos de la base de datos y del front-end a través de protocolos HTTPS. El proyecto fue desarrollado utilizando Node.js y MongoDB como base de datos. Además, se implementó JSON Web Tokens (JWT) para la encriptación de la información transmitida y para asegurar la autenticidad de las respuestas en las comunicaciones HTTPS.",
+                "image":"img/portafolio/BurgerQueen2.png",
+                "repository":"https://github.com/LesliePacheco91/DEV011-burger-queen-api/tree/conexion-mongodb",
                 "languales":[
                     {
                         "id":"1",
-                        "image":"img/skills/html-5.png",
+                        "image":"img/skills/nodejs.png",
                         "name":"HTML"
                     },
                     {
                         "id":"2",
-                        "image":"img/skills/css-3.png",
+                        "image":"img/skills/postman-logo.png",
                         "name":"CSS"
                     },
                     {
@@ -462,28 +468,31 @@ export default{
                     },
                     {
                         "id":"4",
-                        "image":"img/skills/bootstrap.png",
+                        "image":"img/skills/jwt.png",
                         "name":"HTML"
                     },
                     {
                         "id":"5",
-                        "image":"img/skills/php.png",
+                        "image":"img/skills/mongoDB.jpg",
                         "name":"HTML"
                     },
                     {
                         "id":"6",
-                        "image":"img/skills/mysql.png",
+                        "image":"img/skills/jest.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"6",
+                        "image":"img/skills/eslint.png",
                         "name":"HTML"
                     },
                 ]
             },
             {
                 "id":"3",
-                "name":"La Michoacana",
-                "description":"descripcion",
-                "image":"img/portafolio/LaMichoacana.png",
-                "url":"https://www.npmjs.com/package/lp-md-links",
-                "repository":"https://github.com/LesliePacheco91/laMichoacana",
+                "name":"Sistemas de administracion de Banquetes",
+                "description":"Sistema web para gestionar rentas y cotizaciones de mobiliario y equipo de banquetes que incluye registro de usuarios, categorización de productos, gestión de clientes y un módulo de rentas y cotizaciones. Se logró optimizar la gestión de rentas y cotizaciones y administrar diversas sucursales desde una sola sede.El reto consistió en recopilar información, definir los requerimientos del cliente y plasmarlos en el desarrollo de cada módulo de la aplicación. ",
+                "image":"img/portafolio/altaporta.png",
                 "languales":[
                     {
                         "id":"1",

@@ -27,11 +27,13 @@ lis2.textContent = "Habilidades";
 let lis3 = document.createElement('li');
 lis3.textContent = "Proyectos";
 let lis4 = document.createElement('li');
-lis4.textContent = "Cursos";
+lis4.textContent = "Educación";
 let lis5 = document.createElement('li');
-lis5.textContent = "Experiencia";
+lis5.textContent = "Cursos";
+let lis6 = document.createElement('li');
+lis6.textContent = "Experiencia";
 
-list.append(lis1,lis2, lis3, lis4, lis5);
+list.append(lis1,lis2, lis3, lis4, lis5, lis6);
 contendMenu.append(list);
 header.append(titlPage, contendMenu);
 
@@ -255,8 +257,14 @@ arrayData.proyects.forEach(doc =>{
     urlProyect.href = doc.url;
     urlProyect.target = "blank";
 
+
     let iconUrl = document.createElement('img');
-    iconUrl.src = "img/vistas.png";
+    
+
+    if(doc.url != null || doc.url != undefined) {
+
+        iconUrl.src = "img/vistas.png";
+    }
 
     urlProyect.append(iconUrl);
 
@@ -266,7 +274,13 @@ arrayData.proyects.forEach(doc =>{
     urlRespository.target = "blank";
 
     let iconRespository = document.createElement('img');
-    iconRespository.src = "img/github.png";
+    
+
+    if(doc.repository != null || doc.repository != undefined) {
+
+        iconRespository.src = "img/github.png";
+    }
+    
 
     urlRespository.append(iconRespository);
 
@@ -401,7 +415,52 @@ arrayData.experience.forEach(ex =>{
 
 experienceSection.append(titleexperience, listexperience);
 
-container.append(header, sectionAboutme, skillsSection, proyectSection, couserSection, experienceSection);
+
+// educations
+let eduSection = document.createElement('section');
+eduSection.setAttribute('id', 'education');
+
+
+let titleedu = document.createElement('h1');
+titleedu.textContent = "Educación";
+
+let listedu = document.createElement('ul');
+listedu.className = "listEducation";
+
+arrayData.education.forEach(edu =>{
+
+    let dataedu = document.createElement('li');
+    dataedu.setAttribute("class","education");
+
+    let titleEd = document.createElement('h3');
+    titleEd.textContent = edu.degree;
+    
+    let nameSchool = document.createElement('h4');
+    nameSchool.textContent = edu.institution;
+    
+    let dateEdu = document.createElement('p');
+    dateEdu.textContent =`${edu.startDate} | ${edu.endDate}`;
+    let  urlcetifice = document.createElement('a');
+
+    if(edu.url != undefined){
+        urlcetifice.href = edu.url;
+        urlcetifice.textContent = "Ver certificado";
+    }
+   
+    
+    urlcetifice.target = "blank"
+    
+    dataedu.append(titleEd, nameSchool, dateEdu, urlcetifice);
+
+    listedu.append(dataedu);
+
+});
+
+
+eduSection.append(titleedu, listedu);
+
+
+container.append(header, sectionAboutme, skillsSection,proyectSection, eduSection, couserSection, experienceSection);
 
 
 // desplazamientos de enlases
@@ -415,6 +474,7 @@ lis1.addEventListener('click', function(event) {
     lis3.removeAttribute("class","menuActive");
     lis4.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
+    lis6.removeAttribute("class","menuActive");
 
 });
 
@@ -427,6 +487,7 @@ lis2.addEventListener('click', function(event) {
     lis3.removeAttribute("class","menuActive");
     lis4.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
+    lis6.removeAttribute("class","menuActive");
 });
 
 lis3.addEventListener('click', function(event) {
@@ -438,26 +499,41 @@ lis3.addEventListener('click', function(event) {
     lis2.removeAttribute("class","menuActive");
     lis4.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
+    lis6.removeAttribute("class","menuActive");
 });
 
 lis4.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-    couserSection.scrollIntoView({ behavior: 'smooth' });
+    eduSection.scrollIntoView({ behavior: 'smooth' });
     
     lis4.setAttribute("class","menuActive");
     lis1.removeAttribute("class","menuActive");
     lis2.removeAttribute("class","menuActive");
     lis3.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
+    lis6.removeAttribute("class","menuActive");
 });
 
 lis5.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-    experienceSection.scrollIntoView({ behavior: 'smooth' });
+    couserSection.scrollIntoView({ behavior: 'smooth' });
 
     lis5.setAttribute("class","menuActive");
     lis1.removeAttribute("class","menuActive");
     lis2.removeAttribute("class","menuActive");
     lis3.removeAttribute("class","menuActive");
     lis4.removeAttribute("class","menuActive");
+    lis6.removeAttribute("class","menuActive");
+});
+
+lis6.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
+    experienceSection.scrollIntoView({ behavior: 'smooth' });
+
+    lis6.setAttribute("class","menuActive");
+    lis1.removeAttribute("class","menuActive");
+    lis2.removeAttribute("class","menuActive");
+    lis3.removeAttribute("class","menuActive");
+    lis4.removeAttribute("class","menuActive");
+    lis5.removeAttribute("class","menuActive");
 });
