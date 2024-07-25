@@ -121,6 +121,7 @@ export default{
                "degree": "Trailhead",
                "startDate": "2024",
                "endDate": "2024",
+                "info":"Desarrollo de habilidades sobre las herramientas y lenguajes Salesforce como Apex, Visualforce, SOQL/SOSQL entre otros."
            },
             
           {
@@ -128,6 +129,7 @@ export default{
             "degree": "Desarrollo web",
             "startDate": "2023",
             "endDate": "2024",
+              "info":"Bootcamp intensivo de 6 meses, donde adquirí habilidades técnicas como desarrolladora front-end y habilidades blandas mediante el autoaprendizaje en un entorno de sororidad y apoyo mutuo entre mujeres. Desarrollamos proyectos simulando un ambiente laboral de manera remota.",
             "url": "img/laboratora.pdf",
           },
           {
@@ -135,6 +137,7 @@ export default{
             "degree": "Ingeniería en Sistemas computacionales",
             "startDate": "2009",
             "endDate": "2014",
+            "info":"Ingeniería en Sistemas. Descubrí mi pasión por la programación y me enfoqué en el desarrollo web."  
             "url": "img/TITULO.jpg"
           }
         ],
