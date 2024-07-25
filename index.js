@@ -6,8 +6,13 @@ const arrayData = data.abount;
 // header seccion
 let container = document.getElementById('container');
 
+let imgMenuResponsive = document.createElement('img');
+imgMenuResponsive.setAttribute("class","menuRespons");
+imgMenuResponsive.src ="img/menu.png";
+
 let header = document.createElement('header');
 header.setAttribute("class","headerInfo");
+header.setAttribute("id","headerInfo");
 
 let titlPage = document.createElement('h3');
 titlPage.setAttribute("class","titlePage")
@@ -469,11 +474,36 @@ arrayData.education.forEach(edu =>{
 
 });
 
+// refla subir
+
+let imgFlech = document.createElement('img');
+imgFlech.setAttribute("class","flechaRespons");
+imgFlech.src ="img/flecha-arriba.png";
+
+
 
 eduSection.append(titleedu, listedu);
 
 
-container.append(header, sectionAboutme, skillsSection,proyectSection, eduSection, couserSection, experienceSection);
+container.append(imgMenuResponsive, header, sectionAboutme, skillsSection,proyectSection, eduSection, couserSection, experienceSection, imgFlech);
+
+
+// menu active 
+imgMenuResponsive.addEventListener('click', function(event) {
+    event.preventDefault();
+    header.removeAttribute("id","headerInfo");
+})
+
+// dar clic fuera del menu se guarda
+sectionAboutme.addEventListener('click', () => {    
+    header.setAttribute("id","headerInfo");
+});
+
+imgFlech.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
+    imgMenuResponsive.scrollIntoView({ behavior: 'smooth' });
+
+});
 
 
 // desplazamientos de enlases
@@ -488,6 +518,7 @@ lis1.addEventListener('click', function(event) {
     lis4.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
     lis6.removeAttribute("class","menuActive");
+    header.setAttribute("id","headerInfo");
 
 });
 
@@ -501,6 +532,7 @@ lis2.addEventListener('click', function(event) {
     lis4.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
     lis6.removeAttribute("class","menuActive");
+    header.setAttribute("id","headerInfo");
 });
 
 lis3.addEventListener('click', function(event) {
@@ -513,6 +545,7 @@ lis3.addEventListener('click', function(event) {
     lis4.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
     lis6.removeAttribute("class","menuActive");
+    header.setAttribute("id","headerInfo");
 });
 
 lis4.addEventListener('click', function(event) {
@@ -525,6 +558,7 @@ lis4.addEventListener('click', function(event) {
     lis3.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
     lis6.removeAttribute("class","menuActive");
+    header.setAttribute("id","headerInfo");
 });
 
 lis5.addEventListener('click', function(event) {
@@ -537,6 +571,7 @@ lis5.addEventListener('click', function(event) {
     lis3.removeAttribute("class","menuActive");
     lis4.removeAttribute("class","menuActive");
     lis6.removeAttribute("class","menuActive");
+    header.setAttribute("id","headerInfo");
 });
 
 lis6.addEventListener('click', function(event) {
@@ -549,4 +584,5 @@ lis6.addEventListener('click', function(event) {
     lis3.removeAttribute("class","menuActive");
     lis4.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
+    header.setAttribute("id","headerInfo");
 });

@@ -15,6 +15,14 @@ body, #container {
   flex-wrap: wrap;
 }
 
+.menuRespons{
+  display: none;
+}
+
+.flechaRespons {
+  display: none
+}
+
 #container{
   width: 100%;
 }
@@ -40,6 +48,10 @@ body, #container {
 
 .listMenu li{
   cursor: pointer;
+}
+
+.listMenu li:hover {
+  border-bottom: 3px solid #ffd700;
 }
 
 .titlePage{
@@ -335,7 +347,6 @@ body, #container {
   transition: width 0.5s ease, height 0.5s ease;
 }
 #activeCard h3{
-  
     width: 90%;
     font-size: 25px;
 }
@@ -405,18 +416,67 @@ body, #container {
   flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width:  768px) {
 
   .titlePage{
     display: none
   }
   .headerInfo {
-    width: 94%;
+    width: 60%;
     border-radius: 0;
     position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    
+  }
+
+  .menuRespons {
+    width: 9%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 2%;
+    left: 4%;
+    position: absolute;
+    cursor: pointer;
+  }
+  #headerInfo{
+    display: none;
+  }
+
+  .flechaRespons {
+    width: 14%;
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  .listMenu {
+    flex-direction: column;
+    margin: 0;
   }
   .menu {
     width: 100%;
+  }
+
+  .listMenu li {
+    cursor: pointer;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #310961;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .listMenu li:hover {
+    background-color: #670ed2;
+    border-bottom: none;
   }
 
   .photoinfo {
@@ -437,7 +497,7 @@ body, #container {
   }
 
   .tel, .dir, .email{
-    width: 50%;
+    width: 100%;
     justify-content: left;
   }
 
@@ -477,7 +537,7 @@ body, #container {
   }
 
   #activeCard h3{
-    width: 85%;
+    width: 70%;
   }
 
   .contendDescrip {
@@ -505,7 +565,7 @@ body, #container {
   /* Estilos para tablets y dispositivos más pequeños */
 }
 
-@media (min-width: 600px) and (max-width: 1080px) {
+@media (min-width: 768px) and (max-width: 1080px) {
   /* Estilos para tablets */
   .titlePage{
     display: none;
@@ -561,6 +621,10 @@ body, #container {
   #activeCard{
     width:80%;
     justify-content:center;
+  }
+  
+  #activeCard h3{
+    width: 70%;
   }
   #imgActiveCard{
     width: 85%;
