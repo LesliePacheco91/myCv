@@ -438,10 +438,11 @@ body, #container {
     display: flex;
     justify-content: center;
     align-content: center;
-    top: 2%;
-    left: 4%;
+    top: 0%;
+    left: 0%;
     position: absolute;
     cursor: pointer;
+	padding:5%
   }
   #headerInfo{
     display: none;
@@ -515,7 +516,7 @@ body, #container {
   }
 
   .Softskill {
-    width: 45%;
+    width: 40%;
 
   }
   .cardProyect {
