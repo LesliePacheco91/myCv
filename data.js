@@ -370,7 +370,7 @@ export default{
                 "id":"3",
                 "name":"Social NetWork ",
                 "description":"Red social para la publicación de reseñas gastronómicas, donde los usuarios pueden opinar sobre diversos establecimientos culinarios. Cada reseña incluye elementos como la calificación y la ubicación del lugar. La plataforma permite expresar aprobación mediante la función de 'Me gusta' y otorga a los autores la capacidad de editar o eliminar sus publicaciones. El acceso a la aplicación se realiza a través de credenciales de usuario y contraseña, o mediante una cuenta de Google. Se realizaron pruebas unitarias utilizando la herramienta Jest, con un 85 % de aceptación.",
-                "image":"img/portafolio/GastroTour.png",
+                "image":"img/portafolio/gastroTour.png",
                 "repository":"https://github.com/LesliePacheco91/DEV011-social-network/tree/main",
                 "languales":[
                     {
