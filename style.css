@@ -87,7 +87,7 @@ body, #container {
 }
 
 .redes a {
-  width: 10%;
+  width: 13%;
   padding: 3%;
 }
 
@@ -431,6 +431,9 @@ body, #container {
   }
   .contact{
     justify-content: left;
+  }
+  .redes a{
+    width: 14%;
   }
 
   .tel, .dir, .email{

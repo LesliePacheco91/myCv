@@ -5,6 +5,7 @@ export default{
         "photo": "img/leslieP.jpg",
         "linkedin":"https://www.linkedin.com/in/lesliesharaipacheco/",
         "gitHub": "https://github.com/LesliePacheco91",
+        "trailhead": "https://www.salesforce.com/trailblazer/profile",
         "contact":{
           "email": "lesli_sharai_pacheco@hotmail.com",
           "phone": "+(52) 9971135783",
@@ -219,6 +220,21 @@ export default{
                 "name":"HTML"
             },
             {
+                "id":"8",
+                "image":"img/skills/soql.png",
+                "name":"HTML"
+            },
+            {
+                "id":"8",
+                "image":"img/skills/Apex-Salesforce.png",
+                "name":"HTML"
+            },
+            {
+                "id":"8",
+                "image":"img/skills/trailhead.jpg",
+                "name":"HTML"
+            },
+            {
                 "id":"10",
                 "image":"img/skills/notion.svg",
                 "name":"HTML"
@@ -233,6 +249,16 @@ export default{
                 "image":"img/skills/trello.png",
                 "name":"HTML"
             },
+            {
+                "id":"8",
+                "image":"img/skills/photoshop.png",
+                "name":"HTML"
+            },
+            {
+                "id":"8",
+                "image":"img/skills/Illustrator.png",
+                "name":"HTML"
+            }
         ],
 
         "softSkills":[
@@ -370,7 +396,7 @@ export default{
                 "id":"3",
                 "name":"Social NetWork ",
                 "description":"Red social para la publicación de reseñas gastronómicas, donde los usuarios pueden opinar sobre diversos establecimientos culinarios. Cada reseña incluye elementos como la calificación y la ubicación del lugar. La plataforma permite expresar aprobación mediante la función de 'Me gusta' y otorga a los autores la capacidad de editar o eliminar sus publicaciones. El acceso a la aplicación se realiza a través de credenciales de usuario y contraseña, o mediante una cuenta de Google. Se realizaron pruebas unitarias utilizando la herramienta Jest, con un 85 % de aceptación.",
-                "image":"img/portafolio/GastroTour.png",
+                "image":"img/portafolio/gastroTour.png",
                 "repository":"https://github.com/LesliePacheco91/DEV011-social-network/tree/main",
                 "languales":[
                     {

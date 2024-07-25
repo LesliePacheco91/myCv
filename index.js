@@ -64,6 +64,7 @@ socilaRed.className = "redes";
 // linkedin
 let linkedin = document.createElement('a');
 linkedin.href = arrayData.linkedin;
+linkedin.target = "blanck";
 
 let imgLinkedin = document.createElement('img');
 imgLinkedin.setAttribute("class","imgRed");
@@ -74,6 +75,7 @@ linkedin.append(imgLinkedin);
 // gitHub
 let git = document.createElement('a');
 git.href = arrayData.gitHub;
+git.target = "blanck";
 
 let imgGit = document.createElement('img');
 imgGit.setAttribute("class","imgRed");
@@ -81,7 +83,18 @@ imgGit.src = 'img/githubPurple2.png';
 
 git.append(imgGit);
 
-socilaRed.append(linkedin, git);
+
+// trailhead 
+let trailhead = document.createElement('a');
+trailhead.href = arrayData.trailhead;
+trailhead.target = "blanck";
+let imgTrailhead = document.createElement('img');
+imgTrailhead.setAttribute("class","imgRed");
+imgTrailhead.src = 'img/Trailhead.png';
+
+trailhead.append(imgTrailhead);
+
+socilaRed.append(linkedin, git, trailhead);
 
 
 let aboutme = document.createElement('div');
