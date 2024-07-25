@@ -23,7 +23,7 @@ body, #container {
 .headerInfo {
   position: fixed;
   top: 14px;
-  width: 50%;
+  width: 60%;
   background: #45088ee0;
   padding: 0 2% 0 2%;
   display: flex;
@@ -288,7 +288,7 @@ body, #container {
 }
 
 .contentIcons {
-  width: 70%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -495,8 +495,94 @@ body, #container {
     width: 9%;
   }
 
-  .exprience, .education, .curse,{
+  .exprience, .education, .curse{
     width: 100%;
   }
+
   /* Estilos para tablets y dispositivos más pequeños */
+}
+
+@media (min-width: 600px) and (max-width: 1080px) {
+  /* Estilos para tablets */
+  .titlePage{
+    display: none;
+  }
+
+  .headerInfo{
+    width: 90%;
+  }
+  .menu{
+    width: 95%;
+    justify-content: center;
+  }
+  .photoinfo{
+    width: 40%;
+  }
+  .textAbotuME{
+    width: 50%;
+  }
+  .redes a{
+    width: 16%;
+  }
+
+  .tel img, .dir img, .email img{
+    display: none;
+  }
+  .contact{
+    width: 95%;
+    justify-content: center;
+  }
+  .tel, .dir, .email{
+    width: 30%;
+    font-size:18px
+  }
+
+  #experience, #couses, #skills, #proyects, #education{
+    padding:2% 4%;
+    width: 92%;
+  }
+  .curse{
+    width: 45%;
+  }
+  .skill{
+    width: 8%;
+  }
+  .Softskill{
+    width: 18%;
+  }
+  .cardProyect {
+    width: 40%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+  }
+  #activeCard{
+    width:80%;
+    justify-content:center;
+  }
+  #imgActiveCard{
+    width: 85%;
+  }
+  .contendDescrip{
+    width: 86%;
+    padding: 0;
+    margin: 0;
+  }
+  .list-proyects{
+    justify-content: center;
+  }
+  .urlProyect img, .urlRespository img{
+    width: 100%;
+  }
+
+  .urlProyect, .urlRespository {
+    width: 18%;
+  }
+
+  #contentIconsActive .urlProyect, #contentIconsActive .urlRespository {
+    width: 18%;
+    margin-left: 5%;
+  }
+  .contentIcons{
+    width: 90%;
+  }
 }
