@@ -11,7 +11,7 @@ export default{
           "phone": "+(52) 9971135783",
           "address": "Mérida Yucatán México"
         },
-        "summary": "Ingeniera en Sistemas Computacionales y Desarrolladora Web con más de 3 años de experiencia en la industria. Mi especialización en Front-end, combinada con mi pasión por el diseño y la programación, me ha permitido crear soluciones tecnológicas innovadoras que optimizan la eficiencia y facilitan el logro de objetivos. El en trabajo en equipo, autoaprendizaje, adaptabilidad y mi creatividad ha sido clave para implementar soluciones efectivas y superar desafíos con éxito. Me rijo por principios de honestidad, responsabilidad y organización, y estoy profundamente comprometida con el avance tecnológico y su impacto positivo en la sociedad.",
+        "summary": "Ingeniera en Sistemas Computacionales y Desarrolladora Web con más de 3 años de experiencia en la industria. Mi especialización en Front-end, combinada con mi pasión por el diseño y la programación, me ha permitido crear soluciones tecnológicas innovadoras que optimizan la eficiencia y facilitan el logro de objetivos. El trabajo en equipo, autoaprendizaje, adaptabilidad y mi creatividad ha sido clave para implementar soluciones efectivas y superar desafíos con éxito. Me rijo por principios de honestidad, responsabilidad y organización, estoy profundamente comprometida con el avance tecnológico y su impacto positivo en la sociedad.",
         "experience": [
           {
             "company": "Universidad Técnológica del Mayab",
@@ -32,7 +32,7 @@ export default{
             "startDate": "01-2015",
             "endDate": "05-2015",
             "responsibilities": [
-              "Desarrollar y mantener aplicaciones web utilizando HTML, CSS y JavaScript.",
+              "Desarrollar y mantener aplicaciones web",
               "Colaborar con el equipo de diseño para implementar interfaces de usuario responsivas.",
               "Realizar pruebas y depuración de código para garantizar la calidad del software."
             ]
