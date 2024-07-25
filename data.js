@@ -19,10 +19,10 @@ export default{
             "startDate": "07-2015",
             "endDate": "01-2024",
             "responsibilities": [
-                "Diseño de planes de estudio y programas académicos",
-                "Impartición de clases teóricas y prácticas",
+                "Diseño de planes de estudio y programas académicos.",
+                "Impartición de clases teóricas y prácticas.",
                 "Evaluación del progreso de los estudiantes mediante proyectos funcionales.",
-                "Creacion de talleres para el refuerzo de conosimintos.",
+                "Creacion de talleres para el refuerzo de conocimintos.",
                 "Actualización constante en nuevas tecnologías.",
             ]
           },
@@ -32,7 +32,7 @@ export default{
             "startDate": "01-2015",
             "endDate": "05-2015",
             "responsibilities": [
-              "Desarrollar y mantener aplicaciones web",
+              "Desarrollar y mantener aplicaciones web.",
               "Colaborar con el equipo de diseño para implementar interfaces de usuario responsivas.",
               "Realizar pruebas y depuración de código para garantizar la calidad del software."
             ]
@@ -323,7 +323,7 @@ export default{
             }, {
                 "id":"2",
                 "name":"Sistema de evaluación docente",
-                "description":"Desarrollé una aplicación para automatizar el proceso de evaluación docente en la Universidad Tecnológica de Mayab. Esta aplicación permite a los estudiantes realizar evaluaciones a través de un formulario web y genera resultados automáticos, presentándolos con gráficos visuales. La plataforma admite sesiones multiusuario y ha mejorado la eficiencia del proceso en un 60%, eliminando completamente el error humano. Los resultados se preparan y presentan en un documento PDF.",
+                "description":"Aplicación web para automatizar el proceso de evaluación docente en la Universidad Tecnológica de Mayab. Esta aplicación permite a los estudiantes realizar evaluaciones a través de un formulario web y genera resultados automáticos, presentándolos con gráficos visuales. La plataforma admite sesiones multiusuario y ha mejorado la eficiencia del proceso en un 60%, eliminando completamente el error humano. Los resultados se preparan y presentan en un documento PDF.",
                 "image":"img/portafolio/2.png",
                 "languales":[
                     {
