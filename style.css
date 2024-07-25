@@ -54,6 +54,8 @@ body, #container {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   color: #fff;
   width: 100%;
@@ -401,4 +403,100 @@ body, #container {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+
+  .titlePage{
+    display: none
+  }
+  .headerInfo {
+    width: 94%;
+    border-radius: 0;
+    position: absolute;
+  }
+  .menu {
+    width: 100%;
+  }
+
+  .photoinfo {
+    width: 90%;
+  }
+  #aboutme{
+    margin-top:15%;
+  }
+
+  .textAbotuME {
+    width: 90%;
+  }
+  .contact{
+    justify-content: left;
+  }
+
+  .tel, .dir, .email{
+    width: 50%;
+    justify-content: left;
+  }
+
+  #experience, #couses, #skills, #proyects, #education {
+    width: 86%;
+    padding: 1% 7%;
+  }
+
+  .list-kills-tech{
+    justify-content: space-between;
+  }
+  .skill {
+    width: 13%;
+  }
+
+  .Softskill {
+    width: 25%;
+
+  }
+  .cardProyect {
+    width: 100%;
+    margin: 0 0 11% 0;
+  }
+
+  #activeCard{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 11%;
+    background: #00000036;
+    transition: width 0.5s ease, height 0.7s ease;
+  }
+
+  #imgActiveCard {
+    width: 90%;
+    margin: 3% 0;
+  }
+
+  #activeCard h3{
+    width: 85%;
+  }
+
+  .contendDescrip {
+    width: 90%;
+  }
+  .languaje{
+    width: 15%;
+  }
+  #contentIconsActive{
+    width: 90%;
+    margin: 3% 0;
+  }
+  .contentIcons img{
+    width: 100%;
+  }
+  .urlProyect, .urlRespository {
+    padding: 3%;
+    width: 9%;
+  }
+
+  .exprience, .education, .curse,{
+    width: 100%;
+  }
+  /* Estilos para tablets y dispositivos más pequeños */
 }
