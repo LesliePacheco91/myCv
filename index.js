@@ -451,13 +451,13 @@ arrayData.education.forEach(edu =>{
     dataedu.setAttribute("class","education");
 
     let titleEd = document.createElement('h3');
-    titleEd.textContent = edu.degree;
+    titleEd.textContent = `${edu.degree} - ${edu.startDate} | ${edu.endDate}`;
     
     let nameSchool = document.createElement('h4');
     nameSchool.textContent = edu.institution;
     
     let dateEdu = document.createElement('p');
-    dateEdu.textContent =`${edu.startDate} | ${edu.endDate}`;
+    dateEdu.textContent = edu.info;
     let  urlcetifice = document.createElement('a');
 
     if(edu.url != undefined){
