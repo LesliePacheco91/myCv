@@ -510,7 +510,7 @@ imgFlech.addEventListener('click', function(event) {
 
 lis1.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-    sectionAboutme.scrollIntoView({ behavior: 'smooth' });
+    header.scrollIntoView({ behavior: 'smooth' });
 
     lis1.setAttribute("class","menuActive");
     lis2.removeAttribute("class","menuActive");
