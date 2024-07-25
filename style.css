@@ -325,6 +325,7 @@ body, #container {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .menuActive{
