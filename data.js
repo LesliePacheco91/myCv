@@ -5,7 +5,7 @@ export default{
         "photo": "img/leslieP.jpg",
         "linkedin":"https://www.linkedin.com/in/lesliesharaipacheco/",
         "gitHub": "https://github.com/LesliePacheco91",
-        "trailhead": "https://www.salesforce.com/trailblazer/profile",
+        "trailhead": "https://www.salesforce.com/trailblazer/jhbiyila1fm1ar2710",
         "contact":{
           "email": "lesli_sharai_pacheco@hotmail.com",
           "phone": "+(52) 9971135783",
