@@ -137,7 +137,7 @@ export default{
             "degree": "Ingeniería en Sistemas computacionales",
             "startDate": "2009",
             "endDate": "2014",
-            "info":"Ingeniería en Sistemas. Descubrí mi pasión por la programación y me enfoqué en el desarrollo web."  
+            "info":"Ingeniería en Sistemas. Descubrí mi pasión por la programación y me enfoqué en el desarrollo web.", 
             "url": "img/TITULO.jpg"
           }
         ],
