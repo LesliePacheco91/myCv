@@ -130,7 +130,7 @@ export default{
             "startDate": "2023",
             "endDate": "2024",
               "info":"Bootcamp intensivo de 6 meses, donde adquirí habilidades técnicas como desarrolladora front-end y habilidades blandas mediante el autoaprendizaje en un entorno de sororidad y apoyo mutuo entre mujeres. Desarrollamos proyectos simulando un ambiente laboral de manera remota.",
-            "url": "img/laboratora.pdf",
+            "url": "https://www.credential.net/886e2a14-6a58-4132-a042-bc349e3b4df3",
           },
           {
             "institution": "Instito Tecnológico Superior del Sur del Estado de Yucatán (TSSY)",
