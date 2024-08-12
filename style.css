@@ -490,9 +490,11 @@ body, #container {
 
   .textAbotuME {
     width: 90%;
+    font-size: 20px;
   }
   .contact{
     justify-content: left;
+    font-size: 20px;
   }
   .redes a{
     width: 14%;
@@ -517,6 +519,7 @@ body, #container {
 
   .Softskill {
     width: 40%;
+    font-size: 20px;
 
   }
   .cardProyect {
@@ -544,6 +547,7 @@ body, #container {
 
   .contendDescrip {
     width: 90%;
+    font-size: 20px;
   }
   .languaje{
     width: 15%;
