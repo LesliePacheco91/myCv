@@ -20,9 +20,9 @@ export default{
             "endDate": "01-2024",
             "responsibilities": [
                 "Diseño de planes de estudio y programas académicos.",
-                "Impartición de clases teóricas y prácticas.",
+                "Impartir clases teóricas y prácticas.",
                 "Evaluación del progreso de los estudiantes mediante proyectos funcionales.",
-                "Creacion de talleres para el refuerzo de conocimintos.",
+                "Creación de talleres para el refuerzo de conocimientos.",
                 "Actualización constante en nuevas tecnologías.",
             ]
           },
