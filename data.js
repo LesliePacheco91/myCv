@@ -15,7 +15,7 @@ export default{
         "experience": [
           {
             "company": "Universidad Técnológica del Mayab",
-            "position": "Profesor de asigntatura",
+            "position": "Profesor de asignatura",
             "startDate": "07-2015",
             "endDate": "01-2024",
             "responsibilities": [
