@@ -15,7 +15,7 @@ export default{
         "experience": [
           {
             "company": "Universidad Técnológica del Mayab",
-            "position": "Profesor de agintatura",
+            "position": "Profesor de asigntatura",
             "startDate": "07-2015",
             "endDate": "01-2024",
             "responsibilities": [
