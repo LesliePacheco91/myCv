@@ -15,7 +15,7 @@ export default{
         "experience": [
           {
             "company": "Kosmos",
-            "position": "Proyect Manager Tecnical",
+            "position": "Tecnical Acount Manager",
             "startDate": "09-2014",
             "endDate": "Actual",
             "responsibilities": [
