@@ -130,7 +130,8 @@ export default{
                "degree": "Trailhead",
                "startDate": "2024",
                "endDate": "2024",
-                "info":"Desarrollo de habilidades sobre las herramientas y lenguajes Salesforce como Apex, Visualforce, SOQL/SOSQL entre otros."
+                "info":"Desarrollo de habilidades sobre las herramientas y lenguajes Salesforce como Apex, Visualforce, SOQL/SOSQL entre otros.",
+                "url":"https://www.credential.net/e0484eb3-5e01-4cd5-bc7b-bc361195cf9c#gs.g7nnny",
            },
             
           {
@@ -138,7 +139,7 @@ export default{
             "degree": "Desarrollo web",
             "startDate": "2023",
             "endDate": "2024",
-              "info":"Bootcamp intensivo de 6 meses, donde adquirí habilidades técnicas como desarrolladora front-end y habilidades blandas mediante el autoaprendizaje en un entorno de sororidad y apoyo mutuo entre mujeres. Desarrollamos proyectos simulando un ambiente laboral de manera remota.",
+            "info":"Bootcamp intensivo de 6 meses, donde adquirí habilidades técnicas como desarrolladora front-end y habilidades blandas mediante el autoaprendizaje en un entorno de sororidad y apoyo mutuo entre mujeres. Desarrollamos proyectos simulando un ambiente laboral de manera remota.",
             "url": "https://www.credential.net/886e2a14-6a58-4132-a042-bc349e3b4df3",
           },
           {
