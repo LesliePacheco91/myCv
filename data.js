@@ -14,10 +14,19 @@ export default{
         "summary": "Ingeniera en Sistemas Computacionales y Desarrolladora Web con más de 3 años de experiencia en la industria. Mi especialización en Front-end, combinada con mi pasión por el diseño y la programación, me ha permitido crear soluciones tecnológicas innovadoras que optimizan la eficiencia y facilitan el logro de objetivos. El trabajo en equipo, autoaprendizaje, adaptabilidad y mi creatividad ha sido clave para implementar soluciones efectivas y superar desafíos con éxito. Me rijo por principios de honestidad, responsabilidad y organización, estoy profundamente comprometida con el avance tecnológico y su impacto positivo en la sociedad.",
         "experience": [
           {
+            "company": "Kosmos",
+            "position": "Proyect Manager Tecnical",
+            "startDate": "09-2014",
+            "endDate": "Actual",
+            "responsibilities": [
+                "Desarrollo de algoritmos lowcode mediante la plataforma kosmos en lenguaje javascript",
+            ]
+          },
+          {
             "company": "Universidad Técnológica del Mayab",
             "position": "Profesor de asignatura",
             "startDate": "07-2015",
-            "endDate": "01-2024",
+            "endDate": "08-2024",
             "responsibilities": [
                 "Diseño de planes de estudio y programas académicos.",
                 "Impartir clases teóricas y prácticas.",
