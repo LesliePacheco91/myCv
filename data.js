@@ -566,7 +566,7 @@ export default{
                 ]
             },  {
                 "id":"7",
-                "name":"Pagina web con La michoacana",
+                "name":"Pagina web La Michoacana",
                 "description":"Aplicación web que permite el registro, modificación y eliminación de productos, así como el control de inventario y la gestión de ventas en tiempo real. Además, incluye funcionalidades de inicio de sesión para distintos tipos de usuarios, control de accesos, aplicando el modelo Vista-Controlador (MVC) y programación orientada a objetos para asegurar una estructura clara y escalable. El sistema fue diseñado con un enfoque en la usabilidad y la eficiencia operativa.",
                 "image":"https://github.com/LesliePacheco91/laMichoacana/blob/master/capturas/1.png",
                 "languales":[
