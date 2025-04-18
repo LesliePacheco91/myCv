@@ -449,7 +449,7 @@ export default{
                     },
                 ]
             },  {
-                "id":"3",
+                "id":"4",
                 "name":"MdLinks",
                 "description":"La librería tiene el objetivo de leer el archivo markdow, leer el contenido, enlistar los links que esta contiene, al validarlas muestra los estatus de los links y muestra los datos estadísticos de la misma. La librería fue desplegada en la plataforma NPMJS.",
                 "image":"img/portafolio/mdl2.png",
@@ -484,7 +484,7 @@ export default{
                 ]
             },
             {
-                "id":"3",
+                "id":"5",
                 "name":"Burger queen api",
                 "description":"Esta API REST maneja consultas entrantes y proporciona datos obtenidos de la base de datos y del front-end a través de protocolos HTTPS. El proyecto fue desarrollado utilizando Node.js y MongoDB como base de datos. Además, se implementó JSON Web Tokens (JWT) para la encriptación de la información transmitida y para asegurar la autenticidad de las respuestas en las comunicaciones HTTPS.",
                 "image":"img/portafolio/BurgerQueen2.png",
@@ -528,10 +528,47 @@ export default{
                 ]
             },
             {
-                "id":"3",
+                "id":"6",
                 "name":"Sistemas de administracion de Banquetes",
                 "description":"Sistema web para gestionar rentas y cotizaciones de mobiliario y equipo de banquetes que incluye registro de usuarios, categorización de productos, gestión de clientes y un módulo de rentas y cotizaciones. Se logró optimizar la gestión de rentas y cotizaciones y administrar diversas sucursales desde una sola sede.El reto consistió en recopilar información, definir los requerimientos del cliente y plasmarlos en el desarrollo de cada módulo de la aplicación. ",
                 "image":"img/portafolio/altaporta.png",
+                "languales":[
+                    {
+                        "id":"1",
+                        "image":"img/skills/html-5.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"2",
+                        "image":"img/skills/css-3.png",
+                        "name":"CSS"
+                    },
+                    {
+                        "id":"3",
+                        "image":"img/skills/js.png",
+                        "name":"Javascript"
+                    },
+                    {
+                        "id":"4",
+                        "image":"img/skills/bootstrap.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"5",
+                        "image":"img/skills/php.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"6",
+                        "image":"img/skills/mysql.png",
+                        "name":"HTML"
+                    },
+                ]
+            },  {
+                "id":"7",
+                "name":"Pagina web con La michoacana",
+                "description":"Aplicación web que permite el registro, modificación y eliminación de productos, así como el control de inventario y la gestión de ventas en tiempo real. Además, incluye funcionalidades de inicio de sesión para distintos tipos de usuarios, control de accesos.",
+                "image":"https://github.com/LesliePacheco91/laMichoacana/blob/master/capturas/1.png",
                 "languales":[
                     {
                         "id":"1",
