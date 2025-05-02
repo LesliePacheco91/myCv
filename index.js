@@ -6,9 +6,17 @@ const arrayData = data.abount;
 // header seccion
 let container = document.getElementById('container');
 
+let iconLight = document.createElement('img');
+iconLight.setAttribute("class","iconLight");
+iconLight.src ="img/menu.png";
+/*
 let imgMenuResponsive = document.createElement('img');
 imgMenuResponsive.setAttribute("class","menuRespons");
-imgMenuResponsive.src ="img/menu.png";
+imgMenuResponsive.src ="img/menu.png";*/
+
+let imgMenuResponsive = document.createElement('i');
+imgMenuResponsive.setAttribute("id","menuRespons");
+imgMenuResponsive.className ="bi bi-list";
 
 let header = document.createElement('header');
 header.setAttribute("class","headerInfo");
@@ -27,8 +35,9 @@ list.className = "listMenu";
 let lis1 = document.createElement('li');
 lis1.textContent = "Sobre mí";
 
-let lis2 = document.createElement('li');
+/*let lis2 = document.createElement('li');
 lis2.textContent = "Habilidades";
+*/
 let lis3 = document.createElement('li');
 lis3.textContent = "Proyectos";
 let lis4 = document.createElement('li');
@@ -38,18 +47,40 @@ lis5.textContent = "Cursos";
 let lis6 = document.createElement('li');
 lis6.textContent = "Experiencia";
 
-list.append(lis1,lis2, lis3, lis4, lis5, lis6);
+let buttonLigth =  document.createElement('button');
+buttonLigth.className = "buttonLigth";
+
+let iconBrightness = document.createElement('img');
+iconBrightness.className = "brillo";
+iconBrightness.src = "img/brillo1.png";
+
+buttonLigth.append(iconBrightness);
+
+let buttonHigh =  document.createElement('button');
+buttonHigh.className = "buttonhigh";
+
+let iconBrightnessHigh = document.createElement('img');
+iconBrightnessHigh.className = "brillo";
+iconBrightnessHigh.src = "img/brillo-alto.png";
+
+buttonHigh.append(iconBrightnessHigh)
+
+
+list.append(lis1, lis3, lis4, lis5, lis6, buttonLigth, buttonHigh);
 contendMenu.append(list);
-header.append(titlPage, contendMenu);
+header.append(contendMenu);
 
 
 /// about me section
-
 let sectionAboutme = document.createElement('section');
 sectionAboutme.setAttribute("id","aboutme");
 
 let photoinfo = document.createElement('div');
 photoinfo.setAttribute("class","photoinfo");
+
+
+let datainfo = document.createElement('div');
+datainfo.setAttribute("class","datos");
 
 let photo = document.createElement('img');
 photo.setAttribute("class","photo");
@@ -63,6 +94,10 @@ let titleinfo = document.createElement('h4');
 titleinfo.setAttribute("class","title");
 titleinfo.textContent = arrayData.title;
 
+let opeToWord = document.createElement('h2');
+opeToWord.setAttribute("class","opeWork");
+opeToWord.textContent ="Disponible para trabajar";
+
 let socilaRed = document.createElement('div');
 socilaRed.className = "redes";
 
@@ -70,36 +105,76 @@ socilaRed.className = "redes";
 let linkedin = document.createElement('a');
 linkedin.href = arrayData.linkedin;
 linkedin.target = "blanck";
+linkedin.rel = 'noopener noreferrer';
 
-let imgLinkedin = document.createElement('img');
-imgLinkedin.setAttribute("class","imgRed");
-imgLinkedin.src = "img/linkedin2.png";
+const iconoLinkeding = document.createElement('i');
+iconoLinkeding.className = 'bi-linkedin';
+const textoLinkeding = document.createElement('h4');
+textoLinkeding.textContent = "Linkeding";
 
-linkedin.append(imgLinkedin);
+linkedin.append(iconoLinkeding, textoLinkeding);
 
 // gitHub
 let git = document.createElement('a');
 git.href = arrayData.gitHub;
 git.target = "blanck";
+git.rel = 'noopener noreferrer';
 
-let imgGit = document.createElement('img');
-imgGit.setAttribute("class","imgRed");
-imgGit.src = 'img/githubPurple2.png';
+const iconoGit = document.createElement('i');
+iconoGit.className = 'bi-github'; 
 
-git.append(imgGit);
+const textoGit = document.createElement('h4');
+textoGit.textContent = "GitHub";
+
+git.append(iconoGit, textoGit);
 
 
 // trailhead 
 let trailhead = document.createElement('a');
 trailhead.href = arrayData.trailhead;
 trailhead.target = "blanck";
+trailhead.rel = 'noopener noreferrer';
+
+const textTrailhead = document.createElement('h4');
+textTrailhead.textContent = "TrailHead";
+
+
 let imgTrailhead = document.createElement('img');
 imgTrailhead.setAttribute("class","imgRed");
 imgTrailhead.src = 'img/Trailhead.png';
 
-trailhead.append(imgTrailhead);
+trailhead.append(imgTrailhead, textTrailhead);
 
-socilaRed.append(linkedin, git, trailhead);
+// email
+let emailContact = document.createElement('a');
+emailContact.target = "blanck";
+emailContact.rel = 'noopener noreferrer';
+
+const iconoEmail = document.createElement('i');
+iconoEmail.className = 'bi-envelope-fill'; 
+
+const textContact = document.createElement('h4');
+textContact.textContent = "E-Mail";
+
+
+emailContact.append(iconoEmail, textContact);
+
+// button cv
+let buttonCv = document.createElement("a");
+buttonCv.setAttribute("class","buttonCV");
+buttonCv.href = "img/Leslie_pacheco-CV.pdf";
+buttonCv.download = 'cv.pdf';
+buttonCv.rel = 'noopener noreferrer';
+
+const textButtom = document.createElement('h4');
+textButtom.textContent = "Obtener CV";
+
+const iconoCV = document.createElement('i');
+iconoCV.className = 'bi-cloud-download'; 
+
+buttonCv.append(iconoCV, textButtom);
+
+socilaRed.append(linkedin, git, trailhead, emailContact,  buttonCv);
 
 
 let aboutme = document.createElement('div');
@@ -110,13 +185,6 @@ titleAboutMe.textContent = "Sobre mí";
 
 let textAbotuMe = document.createElement('p');
 textAbotuMe.textContent = arrayData.summary;
-
-let buttonCv = document.createElement("a");
-buttonCv.setAttribute("class","buttonCV");
-buttonCv.href = "img/cv.pdf";
-buttonCv.textContent = "Descargar CV";
-buttonCv.download = 'cv.pdf';
-
 
 let contact = document.createElement("div");
 contact.setAttribute("class","contact");
@@ -150,6 +218,7 @@ ema.className = "email"
 let imgEm = document.createElement("img");
 imgEm.className = "imgContact";
 imgEm.src = "img/email.png";
+
 let titleEm = document.createElement("h5");
 titleEm.textContent = arrayData.contact.email;
 
@@ -159,9 +228,11 @@ contact.append(celfon, adreees, ema);
 
 
 
-aboutme.append(titleAboutMe, textAbotuMe,buttonCv );
-photoinfo.append(photo, nameInfo,titleinfo, socilaRed);
-sectionAboutme.append(photoinfo, aboutme,contact);
+aboutme.append(titleAboutMe, textAbotuMe);
+datainfo.append( nameInfo,titleinfo,);
+photoinfo.append(photo,datainfo, opeToWord );
+
+sectionAboutme.append(photoinfo, aboutme, socilaRed);
 
 
 // skills section
@@ -248,10 +319,25 @@ arrayData.proyects.forEach(doc =>{
     contedDescripcion.className = "contendDescrip";
     contedDescripcion.setAttribute("id","contendDescrip");
 
+    let titledesc = document.createElement("h3");
+    titledesc.className = "titleProyect";
+    titledesc.textContent = "Descripción";
+
     let descriptionProyect = document.createElement('p');
     descriptionProyect.className = "descriptionProyect";
     descriptionProyect.setAttribute("id","descProyect");
     descriptionProyect.textContent = doc.description;
+
+    let titleLogro = document.createElement("h3");
+    titleLogro.className = "titleProyect";
+    titleLogro.textContent = "Logro";
+
+    let descriptionLogro = document.createElement('p');
+    descriptionLogro.className = "logroProyecto";
+    descriptionLogro.setAttribute("id","logroProyect");
+    descriptionLogro.textContent = doc.achievements;
+
+
 
     let lisLenguale = document.createElement('ul');
 
@@ -260,47 +346,48 @@ arrayData.proyects.forEach(doc =>{
         let languaje = document.createElement('li');
         languaje.className ="languaje";
 
-        let imgLanguaje = document.createElement('img');
-        imgLanguaje.src = lan.image;
+        let imgLanguaje = document.createElement('i');
+        imgLanguaje.className = lan.image;
 
-        languaje.append(imgLanguaje);
+        let nameLanguaje = document.createElement("h5");
+        nameLanguaje.textContent = lan.name;
+
+        languaje.style.background = lan.color;
+
+        languaje.append(imgLanguaje, nameLanguaje);
 
         lisLenguale.append(languaje);
         
     });
 
-  
+  // ver sitio
     let urlProyect = document.createElement('a');
     urlProyect.className = "urlProyect";
     urlProyect.href = doc.url;
     urlProyect.target = "blank";
 
+    let textUrlProyect = document.createElement('h4');
+    textUrlProyect.textContent = "Sitio";
 
-    let iconUrl = document.createElement('img');
+    let iconUrl = document.createElement('i');
+    iconUrl.className = "bi-link";
     
+    urlProyect.append(iconUrl, textUrlProyect);
 
-    if(doc.url != null || doc.url != undefined) {
-
-        iconUrl.src = "img/vistas.png";
-    }
-
-    urlProyect.append(iconUrl);
-
+    
+    // repositorio
     let urlRespository = document.createElement('a');
     urlRespository.className = "urlRespository";
     urlRespository.href = doc.repository;
     urlRespository.target = "blank";
 
-    let iconRespository = document.createElement('img');
-    
+    let textRespository = document.createElement('h4');
+    textRespository.textContent = "Repositorio";
 
-    if(doc.repository != null || doc.repository != undefined) {
+    let iconRespository = document.createElement('i');
+    iconRespository.className = "bi-github";
 
-        iconRespository.src = "img/github.png";
-    }
-    
-
-    urlRespository.append(iconRespository);
+    urlRespository.append(iconRespository, textRespository);
 
     let divIcons = document.createElement('div');
     divIcons.className = "contentIcons";
@@ -310,9 +397,14 @@ arrayData.proyects.forEach(doc =>{
     buttonUrl.textContent = "Ver Detalle";
 
     let buttonCloseCarActive = document.createElement('button');
-    buttonCloseCarActive.textContent = "X";
     buttonCloseCarActive.className ="btn-close";
     buttonCloseCarActive.setAttribute("id","btn-close");
+
+    let iconButtomClose = document.createElement('i');
+    iconButtomClose.className = "bi-x-lg fs-6";
+
+    buttonCloseCarActive.append(iconButtomClose);
+
 
     buttonUrl.addEventListener('click', function(event) {
           event.preventDefault();
@@ -339,10 +431,18 @@ arrayData.proyects.forEach(doc =>{
       })
 
 
-      contedDescripcion.append(descriptionProyect, lisLenguale);
+      contedDescripcion.append(titledesc, descriptionProyect, titleLogro, descriptionLogro, lisLenguale);
 
-    divIcons.append(urlProyect, urlRespository, buttonUrl);
-        
+    if(doc.url != null || doc.url != undefined) {
+        divIcons.append(urlProyect);
+    }
+
+    if(doc.repository != null || doc.repository != undefined) {
+
+        divIcons.append( urlRespository);
+    }
+   
+    divIcons.append(buttonUrl);
     dataProyect.append( titleProyect,buttonCloseCarActive, imgProyect,  contedDescripcion, divIcons);
     listProtects.append(dataProyect);
 
@@ -451,13 +551,13 @@ arrayData.education.forEach(edu =>{
     dataedu.setAttribute("class","education");
 
     let titleEd = document.createElement('h3');
-    titleEd.textContent = edu.degree;
+    titleEd.textContent = `${edu.degree} - ${edu.startDate} | ${edu.endDate}`;
     
     let nameSchool = document.createElement('h4');
     nameSchool.textContent = edu.institution;
     
     let dateEdu = document.createElement('p');
-    dateEdu.textContent =`${edu.startDate} | ${edu.endDate}`;
+    dateEdu.textContent = edu.info;
     let  urlcetifice = document.createElement('a');
 
     if(edu.url != undefined){
@@ -485,7 +585,7 @@ imgFlech.src ="img/flecha-arriba.png";
 eduSection.append(titleedu, listedu);
 
 
-container.append(imgMenuResponsive, header, sectionAboutme, skillsSection,proyectSection, eduSection, couserSection, experienceSection, imgFlech);
+container.append(imgMenuResponsive, header, sectionAboutme, proyectSection, eduSection, couserSection, experienceSection, imgFlech);
 
 
 // menu active 
@@ -502,7 +602,6 @@ sectionAboutme.addEventListener('click', () => {
 imgFlech.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
     imgMenuResponsive.scrollIntoView({ behavior: 'smooth' });
-
 });
 
 
@@ -513,7 +612,7 @@ lis1.addEventListener('click', function(event) {
     sectionAboutme.scrollIntoView({ behavior: 'smooth' });
 
     lis1.setAttribute("class","menuActive");
-    lis2.removeAttribute("class","menuActive");
+    //lis2.removeAttribute("class","menuActive");
     lis3.removeAttribute("class","menuActive");
     lis4.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
@@ -522,11 +621,12 @@ lis1.addEventListener('click', function(event) {
 
 });
 
+/*
 lis2.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
     skillsSection.scrollIntoView({ behavior: 'smooth' });
 
-    lis2.setAttribute("class","menuActive");
+    //lis2.setAttribute("class","menuActive");
     lis1.removeAttribute("class","menuActive");
     lis3.removeAttribute("class","menuActive");
     lis4.removeAttribute("class","menuActive");
@@ -534,6 +634,8 @@ lis2.addEventListener('click', function(event) {
     lis6.removeAttribute("class","menuActive");
     header.setAttribute("id","headerInfo");
 });
+
+*/
 
 lis3.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
@@ -541,7 +643,7 @@ lis3.addEventListener('click', function(event) {
 
     lis3.setAttribute("class","menuActive");
     lis1.removeAttribute("class","menuActive");
-    lis2.removeAttribute("class","menuActive");
+    //lis2.removeAttribute("class","menuActive");
     lis4.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
     lis6.removeAttribute("class","menuActive");
@@ -554,7 +656,7 @@ lis4.addEventListener('click', function(event) {
     
     lis4.setAttribute("class","menuActive");
     lis1.removeAttribute("class","menuActive");
-    lis2.removeAttribute("class","menuActive");
+   // lis2.removeAttribute("class","menuActive");
     lis3.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
     lis6.removeAttribute("class","menuActive");
@@ -567,7 +669,7 @@ lis5.addEventListener('click', function(event) {
 
     lis5.setAttribute("class","menuActive");
     lis1.removeAttribute("class","menuActive");
-    lis2.removeAttribute("class","menuActive");
+    //lis2.removeAttribute("class","menuActive");
     lis3.removeAttribute("class","menuActive");
     lis4.removeAttribute("class","menuActive");
     lis6.removeAttribute("class","menuActive");
@@ -580,9 +682,210 @@ lis6.addEventListener('click', function(event) {
 
     lis6.setAttribute("class","menuActive");
     lis1.removeAttribute("class","menuActive");
-    lis2.removeAttribute("class","menuActive");
+    //lis2.removeAttribute("class","menuActive");
     lis3.removeAttribute("class","menuActive");
     lis4.removeAttribute("class","menuActive");
     lis5.removeAttribute("class","menuActive");
     header.setAttribute("id","headerInfo");
 });
+
+
+// cambio de color
+let bodyContend = document.querySelector('#container');
+let btnUrl= document.querySelectorAll('.btn-url');
+let urlProyect = document.querySelectorAll('.urlProyect');
+let urlRespository = document.querySelectorAll('.urlRespository');
+let cardProyect = document.querySelectorAll('.cardProyect');
+let institutionEdu = document.querySelectorAll('.education h4');
+let instiCurse = document.querySelectorAll('.curse h4');
+let urlInsti = document.querySelectorAll('.education a');
+let urlCurse = document.querySelectorAll('.curse a');
+let experi = document.querySelectorAll('.exprience h4');
+let botonMolaClose = document.querySelectorAll('#btn-close');
+
+
+buttonLigth.addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    imgTrailhead.src = 'img/Trailhead.png';
+
+    imgMenuResponsive.style.color = "#7D7ED5";
+
+    bodyContend.style.background = "linear-gradient(137deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252, 1) 100%)";
+    buttonLigth.style.display = "none";
+    buttonHigh.style.display = "block";
+    
+    sectionAboutme.style.color = "#000";
+    proyectSection.style.color = "#000";
+    couserSection.style.color = "#000";
+    experienceSection.style.color = "#000";
+    eduSection.style.color = "#000";
+
+    sectionAboutme.style.background = "#ffffffab";
+    skillsSection.style.background = "#ffffffab";
+    proyectSection.style.background = "#ffffffab";
+    couserSection.style.background = "#ffffffab";
+    experienceSection.style.background = "#ffffffab";
+    eduSection.style.background = "#ffffffab";
+
+    header.style.background = "#A2A3F7";
+    opeToWord.style.background = "#94BBE9";
+    opeToWord.style.border = "3px solid #A2A3F7";
+
+    linkedin.style.color = "#d447a0";
+    git.style.color = "#d447a0";
+    trailhead.style.color = "#d447a0";
+    emailContact.style.color = "#d447a0";
+    buttonCv.style.color = "#d447a0";
+
+    cardProyect.forEach(card => {
+        card.style.background = "linear-gradient(137deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252, 1) 100%)";
+        });
+    
+        btnUrl.forEach(btn => {
+            btn.style.background = "#5296E6";
+        });
+        
+       
+       
+        urlProyect.forEach(urlP =>{
+            urlP.style.border = "1px solid #000";
+            urlP.style.color = "#000";
+        })
+        
+    
+        urlRespository.forEach(repo => {
+            repo.style.border = "1px solid #000";
+            repo.style.color = "#000";
+        });
+
+        institutionEdu.forEach(edu =>{
+            edu.style.color = "#5296E6";
+        });
+    
+        instiCurse.forEach(cur =>{
+            cur.style.color = "#5296E6";
+        });
+    
+        urlInsti.forEach(url =>{
+            url.style.color = "#d447a0";
+        });
+    
+        urlCurse.forEach(urlC =>{
+            urlC.style.color = "#d447a0";
+        });
+    
+        experi.forEach(exp => {
+            exp.style.color = "#5296E6";
+        });
+
+        botonMolaClose.forEach(btnMdl =>{
+            btnMdl.style.color = "#d447a0";
+            btnMdl.style.border = "3px solid #d447a0";
+            btnMdl.style.background = "#fff";
+        })
+
+});
+
+buttonHigh.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    imgMenuResponsive.style.color = "#30CFD0";
+
+    imgTrailhead.src = 'img/Trailhead3.png';
+
+   bodyContend.style.background = "linear-gradient(90deg,rgba(48, 195, 202, 1) 0%, rgba(51, 8, 103, 1) 43%)";
+    //bodyContend.style.background = "#330867";
+    buttonLigth.style.display = "block";
+    buttonHigh.style.display = "none";
+
+    header.style.background = "#30CFD0";
+    opeToWord.style.background = "#30CFD0";
+    opeToWord.style.border = "3px solid #330867";
+
+    sectionAboutme.style.background = "#ffffff40";
+    skillsSection.style.background = "#ffffff40";
+    proyectSection.style.background = "#ffffff40";
+    couserSection.style.background = "#ffffff40";
+    experienceSection.style.background = "#ffffff40";
+    eduSection.style.background = "#ffffff40";
+
+    sectionAboutme.style.color = "#fff";
+    proyectSection.style.color = "#fff";
+    couserSection.style.color = "#fff";
+    experienceSection.style.color = "#fff";
+    eduSection.style.color = "#fff";
+
+    linkedin.style.color = "#fff";
+    git.style.color = "#fff";
+    trailhead.style.color = "#fff";
+    emailContact.style.color = "#fff";
+    buttonCv.style.color = "#fff";
+
+
+    eduSection.style.color = "#fff";
+
+    
+    cardProyect.forEach(card => {
+    card.style.background = "#330867";
+    });
+
+    btnUrl.forEach(btn => {
+        btn.style.background = "#30CFD0";
+    });
+    
+   
+   
+    urlProyect.forEach(urlP =>{
+        urlP.style.border = "1px solid #fff";
+        urlP.style.color = "#fff";
+    })
+    
+
+    urlRespository.forEach(repo => {
+        repo.style.border = "1px solid #fff";
+        repo.style.color = "#fff";
+    });
+    
+
+    institutionEdu.forEach(edu =>{
+        edu.style.color = "#330867";
+    });
+
+    instiCurse.forEach(cur =>{
+        cur.style.color = "#330867";
+    });
+
+    urlInsti.forEach(url =>{
+        url.style.color = "#30CFD0";
+    });
+
+    urlCurse.forEach(urlC =>{
+        urlC.style.color = "#30CFD0";
+    });
+
+    experi.forEach(exp => {
+        exp.style.color = "#330867";
+    });
+
+    botonMolaClose.forEach(btnMdl =>{
+        btnMdl.style.color = "#30CFD0";
+        btnMdl.style.border = "3px solid #30CFD0";
+        btnMdl.style.background = "#330867";
+    })
+    
+})
+
+
+// enviar correo
+
+emailContact.addEventListener('click', function(event){
+    
+    const destinatario = "lesliepacheco62@gmail.com";
+    const asunto = "";
+    const cuerpo = "";
+
+    const enlaceCorreo = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+
+    // Redirige al cliente de correo
+    window.location.href = enlaceCorreo;
+})

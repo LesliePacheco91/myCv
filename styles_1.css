@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+  --color-0: linear-gradient(137deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252, 1) 100%);
+  --color-1: #A2A3F7;
+  --colo-2: #A2A3F7F0; /* transparente */
+  --color-3: #ffffffab;
+  --color-4: #ffffff;
+  --color-5: #E0C3FC;
+  --color-6: #94BBE9;
+  --color-7: #d447a0;
+  --color-8: #5296E6;
+  --color-9: #7D7ED5;
+  --font-family: "Nunito", sans-serif;
+  --font-size-1: 1rem;
+  --font-size-2: 1.2rem;
+  --font-size-3: 1.8rem;
+}
+
+body, #container {
+  font-family:  var(--font-family);
+  font-optical-sizing: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-0);
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#menuRespons{
+  display: none;
+}
+
+.flechaRespons {
+  display: none
+}
+
+#container{
+  width: 100%;
+}
+
+
+.headerInfo {
+  position: fixed;
+  top: 14px;
+  width: 50%;
+  background: var(--color-1);
+  padding: 0 2% 0 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  box-shadow: 1px 10px 19px -6px rgba(0,0,0,0.44);
+}
+
+.textAbotuME p{
+  text-align: justify;
+}
+
+.listMenu li{
+  cursor: pointer;
+}
+
+.listMenu li:hover {
+  border-bottom: 3px solid var(--color-5);
+}
+
+.titlePage{
+  color: var(--color-4);
+}
+
+.menu{
+	width: 95%;
+}
+
+.buttonLigth, .buttonhigh {
+  background: none;
+  border: none;
+  width: 3em;
+  height: 4em;
+  cursor: pointer;
+}
+
+.buttonLigth{
+  display: none;
+}
+
+.brillo {
+  width: 100%;
+}
+
+.list-soft-skills, .listMenu{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--color-4);
+  width: 100%;
+  padding: 0;
+  font-weight:bold;
+}
+
+.list-proyects{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  padding: 0;
+}
+
+.urlProyect, .urlRespository{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 40%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px;
+  color:#000;
+}
+
+.urlProyect h4, .urlRespository h4{
+  margin: 0 0 0 6px;
+}
+.list-kills-tech{
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: var(--color-3);
+  width: 100%;
+  padding: 0;
+}
+
+.redes {
+  width: 90%;
+  display: flex;
+  margin-bottom: 2em;
+  align-items: center;
+  flex-direction: row;
+  justify-content: initial;
+ 
+}
+
+.redes a {
+  width: 13%;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  border:1px solid;
+  border-radius:10px;
+  text-decoration: none;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  align-content: center;
+  color: var(--color-7);
+  cursor: pointer;
+}
+
+.redes a h4{
+    margin: 0 5px;
+    text-align: center;
+}
+
+.tel h5, .dir h5, .email h5{
+  margin: 0;
+}
+
+.imgRed{
+  width: 13%;
+}
+.imgContact {
+  width: 9%;
+  padding: 2%;
+}
+
+.tel, .dir, .email {
+  width: 95%;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  flex-direction: row;
+}
+.photoinfo {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+}
+
+.opeWork{
+    width: 30%;
+    text-align: center;
+    background: var(--color-6);
+    color: var(--color-4);
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 13em;
+    border: 4px  solid var(--color-1);
+    border-radius: 20px;
+}
+#skills {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: var(--color-3
+  );
+}
+
+#couses, #experience, #education, #experience, #proyects{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+
+#aboutme, #experience, #couses, #skills, #proyects, #education{
+  width: 85%;
+  background: var(--color-3);
+  box-shadow: 1px 10px 19px -6px rgba(0,0,0,0.44);
+  margin-bottom: 4em;
+  padding: 2% 0;
+  border-radius: 20px;
+}
+
+
+#aboutme{
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  
+}
+
+.contact {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  margin-left: 4em;
+}
+
+
+.exprience h2, .exprience h4, .exprience h5, .exprience ul {
+  margin: 6px 0 6px 0;
+}
+.exprience h4{
+  color:var(--color-8);
+}
+
+
+.listCurses, .listexpe, .listEducation{ 
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  padding: 0;
+}
+.listCurses, .education{
+  justify-content: left;
+}
+
+.listexpe{
+  justify-content: center;
+}
+
+.curse, .education {
+  width: 47%;
+  margin-right: 1%;
+  border-left: 4px solid var(--color-6);
+  padding-left: 1em;
+}
+
+.curse{
+  margin-bottom: 20px;
+}
+
+.curse h4, .curse p, .education h4, .education p{
+  margin: 0;
+}
+
+.curse h4, .education h4{
+  color: var(--color-8);
+}
+
+.curse h3, .education h3{
+  margin-bottom: 0;
+}
+
+.curse a, .education a{
+  margin-top: 0;
+  color: var(--color-7);
+  font-weight: bolder;
+}
+
+.exprience, .education {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.photo {
+  width: 12em;
+  height: 11.5em;
+  border-radius: 100%;
+  margin: 3% 3% 0 0;
+}
+
+.textAbotuME {
+  width: 90%;
+  margin: 0 3%;
+}
+
+.name, .title{
+    width: 100%;
+	margin: 2% 0 0 0;
+}
+
+.buttonCV {
+  padding: 11px 20px 11px 20px;
+  border: 0;
+  border-radius: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.imgSkill {
+  width: 100%;
+}
+
+.imgSSoftkill{
+  width: 45%;
+}
+.Softskill {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 12%;
+}
+
+.skill {
+  width: 5%;
+  margin: 2%;
+}
+#skills h1, #skills h3{
+  width: 100%;
+}
+
+.imageProyect{
+  width: 100%;
+  border-radius: 13px;
+}
+
+.cardProyect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2%;
+  border-radius: 21px;
+  width: 28%;
+  margin-bottom: 2%;
+  background: var(--color-0);
+  
+}
+
+.cardProyect h3{
+  margin-top: 0;
+  text-align: center;
+  width: 80%;
+}
+
+.contentIcons {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contentIcons img {
+  width: 50%;
+}
+
+.btn-url {
+  width: 100%;
+  height: 3em;
+  background: var(--color-8);
+  border: 0;
+  color: var(--color-4);
+  border-radius: 11px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn-url , .buttonCV, #btn-close  {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menuActive{
+  color: var(--color-4);
+  font-weight: bold;
+  font-size: 19px;
+  border-bottom: 3px solid var(--color-5);
+}
+
+#activeCard {
+  margin: 0;
+  width: 76%;
+  position: absolute;
+  background: var(--color-4);
+  display: flex;
+  flex-direction: row;
+  align-items:center ;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+#activeCard h2{
+    width: 90%;
+    font-size: 25px;
+}
+
+#btnDisable{
+  display: none
+}
+
+#descProyect, #logroProyect{
+  width: 90%;
+  padding: 2%;
+  text-align: justify;
+  margin: 0;
+  margin-left: 3%;
+}
+
+.titleProyect {
+  width: 80%;
+  padding: 2% 0% 0% 2%;
+  text-align: justify;
+  margin: 0;
+  margin-left: 3%;
+}
+
+#imgActiveCard{
+  width: 40%;
+}
+
+#contendDescrip {
+  display: none;
+}
+
+
+#contentIconsActive{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+
+}
+
+.btn-close{
+  display: none
+}
+
+#btn-close {
+  width: 50px;
+  height: 39px;
+  background: var(--color-4);
+  border: var(--color-4);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-7);
+  border:2px solid;
+}
+
+.contendDescrip {
+  width: 60%;
+}
+
+.languaje {
+  width: 15%;
+  list-style: none;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 2%;
+}
+
+.languaje h5{
+  margin: 0 0 0 4px;
+}
+.contendDescrip ul {
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 8%;
+}
+
+
+/* Estilos para tablets y dispositivos más pequeños */
+@media (max-width:  768px) {
+
+  .titlePage{
+    display: none
+  }
+  .headerInfo {
+    width: 65%;
+    border-radius: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    background: var(--colo-2);
+    
+  }
+
+  #menuRespons {
+    width: 9%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    cursor: pointer;
+	  padding:5%;
+    font-size: 4em;
+    color: var(--color-9);
+  }
+  #headerInfo{
+    display: none;
+  }
+
+  .flechaRespons {
+    width: 14%;
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  .listMenu {
+    flex-direction: column;
+    margin: 0;
+  }
+  .menu {
+    width: 100%;
+  }
+
+  .listMenu li {
+    cursor: pointer;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--color-8);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .listMenu li:hover {
+    background-color: var(--color-2);
+    border-bottom: none;
+  }
+
+  #aboutme, #proyects, #education, #couses, #experience{
+    width: 95%;
+  }
+
+  .photoinfo {
+    width: 90%;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .opeWork{
+    margin-left: 0;
+    width: 80%;
+  }
+  #aboutme{
+    margin-top:25%;
+  }
+
+  .textAbotuME {
+    width: 90%;
+    font-size: 20px;
+  }
+  .contact{
+    justify-content: left;
+    font-size: 20px;
+  }
+
+  .redes{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .redes a{
+    width: 40%;
+    padding: 3%;
+  }
+
+  .redes a h4{
+    font-size: 13px;
+    align-items: center;
+  }
+
+  .tel, .dir, .email{
+    width: 100%;
+    justify-content: left;
+  }
+
+ 
+
+  .list-kills-tech{
+    justify-content: space-between;
+  }
+  .skill {
+    width: 13%;
+  }
+
+  .Softskill {
+    width: 40%;
+    font-size: 20px;
+
+  }
+  .cardProyect {
+    width: 100%;
+    margin: 0 0 11% 0;
+  }
+
+  #activeCard{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 11%;
+    background: var(--color-0);
+    transition: width 0.5s ease, height 0.7s ease;
+  }
+
+  .btn-url{
+    margin-bottom: 15px;
+  }
+
+  #btn-close{
+    width: 39px;
+  }
+
+  #imgActiveCard {
+    width: 90%;
+    margin: 3% 0;
+  }
+
+  #activeCard h3{
+    width: 83%;
+  }
+
+  .contendDescrip {
+    width: 90%;
+    font-size: 20px;
+  }
+  .languaje{
+    width: 42%;
+  }
+  #contentIconsActive{
+    width: 90%;
+    margin: 3% 0;
+  }
+  .contentIcons img{
+    width: 100%;
+  }
+  .urlProyect, .urlRespository {
+    padding: 3%;
+    width: 40%;
+  }
+
+  .exprience, .education, .curse{
+    width: 100%;
+  }
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  /* Estilos para tablets */
+  .titlePage{
+    display: none;
+  }
+
+  .headerInfo{
+    width: 90%;
+  }
+  .menu{
+    width: 95%;
+    justify-content: center;
+  }
+  .listMenu{
+    margin: 1% 0 1% 0;
+  }
+
+  .photoinfo{
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .textAbotuME{
+    width: 90%;
+  }
+  .redes a{
+    width: 16%;
+    font-size: 13px;
+  }
+  .datos{
+    width: 50%;
+  }
+  .opeWork{
+    margin-left: 0;
+    width: 22%;
+    font-size:12px;
+  }
+
+  .photo{
+    width: 8em;
+    height: 8em;
+  }
+/*
+  .tel img, .dir img, .email img{
+    display: none;
+  }*/
+  .contact{
+    width: 95%;
+    justify-content: center;
+  }
+  .tel, .dir, .email{
+    width: 80%;
+    font-size:18px
+  }
+
+  #experience, #couses, #skills, #proyects, #education, #aboutme{
+    width: 93%;
+  }
+
+  #aboutme{
+    margin-top:16%
+  }
+
+  .curse{
+    width: 45%;
+  }
+  .skill{
+    width: 8%;
+  }
+  .Softskill{
+    width: 18%;
+  }
+  .cardProyect {
+    width: 43%;
+    margin-bottom: 4%;
+  }
+  #activeCard{
+    width:80%;
+    justify-content:center;
+  }
+  
+  #activeCard h3{
+    width: 70%;
+  }
+  #imgActiveCard{
+    width: 90%;
+  }
+  .contendDescrip{
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+  .list-proyects{
+    /*justify-content: center;*/
+  }
+  .urlProyect img, .urlRespository img{
+    width: 100%;
+  }
+
+  .urlProyect, .urlRespository {
+    width: 40%;
+  }
+
+  #contentIconsActive{
+    width: 55%;
+  }
+  #contentIconsActive .urlProyect, #contentIconsActive .urlRespository {
+    width: 40%;
+  }
+  .contentIcons{
+    width: 90%;
+  }
+
+  #btn-close{
+    width: 40px;
+    height: 40px;
+  }
+
+}
