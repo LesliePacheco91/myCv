@@ -27,6 +27,7 @@ body, #container {
   justify-content: center;
   align-items: center;
   background: var(--color-0);
+
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -213,9 +214,6 @@ body, #container {
 }
 .exprience h4{
   color:var(--color-6);
-}
-
-
 .listCurses, .listexpe, .listEducation{ 
   list-style: none;
   display: flex;

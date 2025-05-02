@@ -2,7 +2,7 @@ export default{
     abount :{
         "name":"Leslie Pacheco",
         "title": "Ingeniero en Sistemas Computacionales",
-        "photo": "img/leslieP.jpg",
+        "photo": "https://avatars.githubusercontent.com/u/126528844?s=400&u=9609dd79eb707ab57b1d6f98e69dabf80020232c&v=4",
         "linkedin":"https://www.linkedin.com/in/lesliesharaipacheco/",
         "gitHub": "https://github.com/LesliePacheco91",
         "trailhead": "https://www.salesforce.com/trailblazer/jhbiyila1fm1ar2710",
@@ -25,11 +25,12 @@ export default{
           },
           {
             "company": "Universidad Técnológica del Mayab",
-            "position": "Profesor de agintatura",
+            "position": "Profesor de asignatura",
             "startDate": "07-2015",
-            "endDate": "01-2024",
+            "endDate": "08-2024",
             "responsibilities": [
                 "Diseño de planes de estudio y programas académicos.",
+
                 "Impartición de clases teóricas y prácticas.",
                 "Evaluación del progreso de los estudiantes mediante proyectos funcionales.",
                 "Creacion de talleres para el refuerzo de conocimintos.",
@@ -134,6 +135,7 @@ export default{
                "endDate": "2024",
                 "info":"Desarrollo de habilidades sobre las herramientas y lenguajes Salesforce como Apex, Visualforce, SOQL/SOSQL entre otros.",
                 "url":"https://www.credential.net/e0484eb3-5e01-4cd5-bc7b-bc361195cf9c#gs.g7nnny"
+
            },
             
           {
@@ -423,7 +425,7 @@ export default{
                     },
                 ]
             }, {
-                "id":"3",
+                "id":"4",
                 "name":"Social NetWork ",
                 "description":"Red social para la publicación de reseñas gastronómicas, donde los usuarios pueden opinar sobre diversos establecimientos culinarios. Cada reseña incluye elementos como la calificación y la ubicación del lugar. La plataforma permite expresar aprobación mediante la función de 'Me gusta' y otorga a los autores la capacidad de editar o eliminar sus publicaciones. El acceso a la aplicación se realiza a través de credenciales de usuario y contraseña, o mediante una cuenta de Google. Se realizaron pruebas unitarias utilizando la herramienta Jest, con un 85 % de aceptación.",
                 "achievements":"Además de lograr los objetivos de aprendizaje, como equipo utilizamos ventanas emergentes y diversos iconos para mayor interactividad y mejor visualización de las calificaciones y se logró mas del 80 % se aceptación de las pruebas unitarios",
@@ -474,7 +476,7 @@ export default{
                     },
                 ]
             },  {
-                "id":"3",
+                "id":"5",
                 "name":"MdLinks",
                 "description":"Librería que tiene como objetivo leer archivos Markdown, analizar su contenido, listar los enlaces que contienen, validar estos enlaces y mostrar sus estados, además de proporcionar datos estadísticos. La librería fue desplegada en la plataforma NPMJS.",
                 "achievements":"Además de alcanzar los objetivos de aprendizaje, logré que los test unitarios superaran el 90% de efectividad.",
@@ -515,7 +517,7 @@ export default{
                 ]
             },
             {
-                "id":"3",
+                "id":"6",
                 "name":"Burger queen api",
                 "description":"Esta API REST maneja consultas entrantes y proporciona datos obtenidos de la base de datos y del front-end a través de protocolos HTTPS. El proyecto fue desarrollado utilizando Node.js y MongoDB como base de datos. Además, se implementó JSON Web Tokens (JWT) para la encriptación de la información transmitida y para asegurar la autenticidad de las respuestas en las comunicaciones HTTPS.",
                 "achievements":"Gracias a los middlewares, se gestionaron correctamente los permisos de acceso a la información para cada usuario que inicia sesión, además de asegurar la seguridad de los datos mediante la implementación de tokens. Se logró un 90% de aceptación en las pruebas unitarias de extremo a extremo.",
@@ -572,7 +574,7 @@ export default{
                 ]
             },
             {
-                "id":"3",
+                "id":"7",
                 "name":"Sistemas de administracion de Banquetes",
                 "description":"Sistema web para gestionar rentas y cotizaciones de mobiliario y equipo de banquetes que incluye registro de usuarios, categorización de productos, gestión de clientes y un módulo de rentas y cotizaciones. Se logró optimizar la gestión de rentas y cotizaciones y administrar diversas sucursales desde una sola sede.El reto consistió en recopilar información, definir los requerimientos del cliente y plasmarlos en el desarrollo de cada módulo de la aplicación. ",
                 "image":"img/portafolio/altaporta.png",
@@ -657,6 +659,44 @@ export default{
                         "image":"devicon-mysql-original colored",
                         "name":"MYSQL",
                         "color":"#25678380"
+                    },
+                ]
+            },  {
+                "id":"8",
+                "name":"Pagina web La Michoacana",
+                "description":"Aplicación web que permite el registro, modificación y eliminación de productos, así como el control de inventario y la gestión de ventas en tiempo real. Además, incluye funcionalidades de inicio de sesión para distintos tipos de usuarios, control de accesos, aplicando el modelo Vista-Controlador (MVC) y programación orientada a objetos para asegurar una estructura clara y escalable. El sistema fue diseñado con un enfoque en la usabilidad y la eficiencia operativa.",
+                "image":"img/portafolio/LaMichoacana.png",
+                "repository":"https://github.com/LesliePacheco91/laMichoacana",
+                "languales":[
+                    {
+                        "id":"1",
+                        "image":"img/skills/html-5.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"2",
+                        "image":"img/skills/css-3.png",
+                        "name":"CSS"
+                    },
+                    {
+                        "id":"3",
+                        "image":"img/skills/js.png",
+                        "name":"Javascript"
+                    },
+                    {
+                        "id":"4",
+                        "image":"img/skills/bootstrap.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"5",
+                        "image":"img/skills/php.png",
+                        "name":"HTML"
+                    },
+                    {
+                        "id":"6",
+                        "image":"img/skills/mysql.png",
+                        "name":"HTML"
                     },
                 ]
             }
