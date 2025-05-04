@@ -661,47 +661,7 @@ export default{
                         "color":"#25678380"
                     },
                 ]
-            },  {
-                "id":"8",
-                "name":"Pagina web La Michoacana",
-                "description":"Aplicación web que permite el registro, modificación y eliminación de productos, así como el control de inventario y la gestión de ventas en tiempo real. Además, incluye funcionalidades de inicio de sesión para distintos tipos de usuarios, control de accesos, aplicando el modelo Vista-Controlador (MVC) y programación orientada a objetos para asegurar una estructura clara y escalable. El sistema fue diseñado con un enfoque en la usabilidad y la eficiencia operativa.",
-                "image":"img/portafolio/LaMichoacana.png",
-                "repository":"https://github.com/LesliePacheco91/laMichoacana",
-                "languales":[
-                    {
-                        "id":"1",
-                        "image":"img/skills/html-5.png",
-                        "name":"HTML"
-                    },
-                    {
-                        "id":"2",
-                        "image":"img/skills/css-3.png",
-                        "name":"CSS"
-                    },
-                    {
-                        "id":"3",
-                        "image":"img/skills/js.png",
-                        "name":"Javascript"
-                    },
-                    {
-                        "id":"4",
-                        "image":"img/skills/bootstrap.png",
-                        "name":"HTML"
-                    },
-                    {
-                        "id":"5",
-                        "image":"img/skills/php.png",
-                        "name":"HTML"
-                    },
-                    {
-                        "id":"6",
-                        "image":"img/skills/mysql.png",
-                        "name":"HTML"
-                    },
-                ]
             }
-
-
         ],
         "languages": [
           {
