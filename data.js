@@ -9,7 +9,8 @@ export default{
         "contact":{
           "email": "lesliepacheco62@gmail.com",
           "phone": "+(52) 997-113-57-83",
-          "address": "Mérida Yucatán México"
+          "address": "Mérida Yucatán México",
+          "telegram":"https://t.me/Lesli_PC"
         },
         "summary": "Ingeniera en Sistemas Computacionales y Desarrolladora Web con más de 3 años de experiencia en la industria. Mi especialización en Front-end, combinada con mi pasión por el diseño y la programación, me ha permitido crear soluciones tecnológicas innovadoras que optimizan la eficiencia y facilitan el logro de objetivos. El trabajo en equipo, autoaprendizaje, adaptabilidad y mi creatividad ha sido clave para implementar soluciones efectivas y superar desafíos con éxito. Me rijo por principios de honestidad, responsabilidad y organización, estoy profundamente comprometida con el avance tecnológico y su impacto positivo en la sociedad.",
         "experience": [
@@ -621,7 +622,7 @@ export default{
                 "id":"8",
                 "name":"Pagina web La Michoacana",
                 "description":"Aplicación web que permite el registro, modificación y eliminación de productos, así como el control de inventario y la gestión de ventas en tiempo real. Además, incluye funcionalidades de inicio de sesión para distintos tipos de usuarios, control de accesos, aplicando el modelo Vista-Controlador (MVC) y programación orientada a objetos para asegurar una estructura clara y escalable. El sistema fue diseñado con un enfoque en la usabilidad y la eficiencia operativa.",
-                "image":"img/portafolio/LaMichoacana.png",
+                "image":"img/portafolio/LaMichoacana1.png",
                 "repository":"https://github.com/LesliePacheco91/laMichoacana",
                 "languales":[
                     {

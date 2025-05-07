@@ -58,6 +58,7 @@ body, #container {
   flex-wrap: wrap;
   border-radius: 20px;
   box-shadow: 1px 10px 19px -6px rgba(0,0,0,0.44);
+  z-index: 2;
 }
 
 .textAbotuME p{
@@ -137,17 +138,6 @@ body, #container {
 .urlProyect h4, .urlRespository h4{
   margin: 0 0 0 6px;
 }
-.list-kills-tech{
-  list-style: none;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  color: var(--color-3);
-  width: 100%;
-  padding: 0;
-}
 
 .redes {
   width: 90%;
@@ -172,6 +162,10 @@ body, #container {
   align-content: center;
   color: var(--color-7);
   cursor: pointer;
+}
+
+.redes a:hover{
+  transform: scale(1.1);
 }
 
 .redes a h4{
@@ -218,7 +212,7 @@ body, #container {
     animation: heartbeat 8s infinite;
 }
 
-    @keyframes heartbeat {
+@keyframes heartbeat {
       0% {
         transform: scale(1);
       }
@@ -234,8 +228,6 @@ body, #container {
       60% {
         transform: scale(1);
       }
-    }
-    animation: heartbeat 8s infinite;
 }
 
 #skills {
@@ -410,8 +402,9 @@ body, #container {
   width: 28%;
   margin-bottom: 2%;
   background: var(--color-0);
-  
 }
+
+
 
 .cardProyect h3{
   margin-top: 0;
@@ -428,6 +421,7 @@ body, #container {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 
 .contentIcons img {
   width: 50%;

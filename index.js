@@ -149,8 +149,22 @@ iconoEmail.className = 'bi-envelope-fill';
 const textContact = document.createElement('h4');
 textContact.textContent = "E-Mail";
 
+emailContact.append(iconoEmail, textContact );
 
-emailContact.append(iconoEmail, textContact);
+// telegram
+let telegramContact = document.createElement('a');
+telegramContact.href = arrayData.contact.telegram;
+telegramContact.target = "blanck";
+telegramContact.rel = 'noopener noreferrer';
+
+const iconoTelegram = document.createElement('i');
+iconoTelegram.className = 'bi-telegram'; 
+
+const textTelegram = document.createElement('h4');
+textTelegram.textContent = "Escribeme";
+
+
+telegramContact.append(iconoTelegram, textTelegram);
 
 // button cv
 let buttonCv = document.createElement("a");
@@ -167,7 +181,7 @@ iconoCV.className = 'bi-cloud-download';
 
 buttonCv.append(iconoCV, textButtom);
 
-socilaRed.append(linkedin, git, trailhead, emailContact,  buttonCv);
+socilaRed.append(linkedin, git, trailhead, emailContact, telegramContact,  buttonCv);
 
 
 let aboutme = document.createElement('div');
@@ -586,9 +600,15 @@ let urlInsti = document.querySelectorAll('.education a');
 let urlCurse = document.querySelectorAll('.curse a');
 let experi = document.querySelectorAll('.exprience h4');
 let botonMolaClose = document.querySelectorAll('#btn-close');
+let redes = document.querySelectorAll('.redes a');
+let menuActive = document.querySelector('.menuActive');
+let dataCursos = document.querySelectorAll(".curse");
+let dataEduc = document.querySelectorAll(".education");
 
 
 buttonLigth.addEventListener('click', function(event) {
+
+    photo.src = "img/leslieP.jpg";
     event.preventDefault(); 
 
     imgTrailhead.src = 'img/Trailhead.png';
@@ -615,69 +635,78 @@ buttonLigth.addEventListener('click', function(event) {
     opeToWord.style.background = "#94BBE9";
     opeToWord.style.border = "3px solid #A2A3F7";
 
-    linkedin.style.color = "#d447a0";
-    git.style.color = "#d447a0";
-    trailhead.style.color = "#d447a0";
-    emailContact.style.color = "#d447a0";
-    buttonCv.style.color = "#d447a0";
+
+    redes.forEach(rd => {
+        rd.style.color = "#d447a0";
+    });
+
 
     cardProyect.forEach(card => {
         card.style.background = "linear-gradient(137deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252, 1) 100%)";
-        });
+    });
     
-        btnUrl.forEach(btn => {
-            btn.style.background = "#5296E6";
-        });
-        
-       
-       
-        urlProyect.forEach(urlP =>{
-            urlP.style.border = "1px solid #000";
-            urlP.style.color = "#000";
-        })
-        
+    btnUrl.forEach(btn => {
+        btn.style.background = "#5296E6";
+    });
     
-        urlRespository.forEach(repo => {
-            repo.style.border = "1px solid #000";
-            repo.style.color = "#000";
-        });
+    
+    
+    urlProyect.forEach(urlP =>{
+        urlP.style.border = "1px solid #000";
+        urlP.style.color = "#000";
+    })
+    
 
-        institutionEdu.forEach(edu =>{
-            edu.style.color = "#5296E6";
-        });
-    
-        instiCurse.forEach(cur =>{
-            cur.style.color = "#5296E6";
-        });
-    
-        urlInsti.forEach(url =>{
-            url.style.color = "#d447a0";
-        });
-    
-        urlCurse.forEach(urlC =>{
-            urlC.style.color = "#d447a0";
-        });
-    
-        experi.forEach(exp => {
-            exp.style.color = "#5296E6";
-        });
+    urlRespository.forEach(repo => {
+        repo.style.border = "1px solid #000";
+        repo.style.color = "#000";
+    });
 
-        botonMolaClose.forEach(btnMdl =>{
-            btnMdl.style.color = "#d447a0";
-            btnMdl.style.border = "3px solid #d447a0";
-            btnMdl.style.background = "#fff";
-        })
+    institutionEdu.forEach(edu =>{
+        edu.style.color = "#5296E6";
+    });
+
+    instiCurse.forEach(cur =>{
+        cur.style.color = "#5296E6";
+    });
+
+    urlInsti.forEach(url =>{
+        url.style.color = "#d447a0";
+    });
+
+    urlCurse.forEach(urlC =>{
+        urlC.style.color = "#d447a0";
+    });
+
+    experi.forEach(exp => {
+        exp.style.color = "#5296E6";
+    });
+
+    dataCursos.forEach(element => {
+        element.style.borderLeft = "4px solid #94BBE9";
+    });
+
+    dataEduc.forEach(element => {
+        element.style.borderLeft = "4px solid #94BBE9";
+    });
+
+    botonMolaClose.forEach(btnMdl =>{
+        btnMdl.style.color = "#d447a0";
+        btnMdl.style.border = "3px solid #d447a0";
+        btnMdl.style.background = "#fff";
+    })
 
 });
 
 buttonHigh.addEventListener('click', function(event) {
     event.preventDefault(); 
-    imgMenuResponsive.style.color = "#30CFD0";
 
+    photo.src = "img/leslie.png";
+    imgMenuResponsive.style.color = "#30CFD0";
+    
     imgTrailhead.src = 'img/Trailhead3.png';
 
    bodyContend.style.background = "linear-gradient(90deg,rgba(48, 195, 202, 1) 0%, rgba(51, 8, 103, 1) 43%)";
-    //bodyContend.style.background = "#330867";
     buttonLigth.style.display = "block";
     buttonHigh.style.display = "none";
 
@@ -697,15 +726,19 @@ buttonHigh.addEventListener('click', function(event) {
     experienceSection.style.color = "#fff";
     eduSection.style.color = "#fff";
 
-    linkedin.style.color = "#fff";
-    git.style.color = "#fff";
-    trailhead.style.color = "#fff";
-    emailContact.style.color = "#fff";
-    buttonCv.style.color = "#fff";
+    redes.forEach(rd => {
+        rd.style.color = "#fff";
+    });
 
 
-    eduSection.style.color = "#fff";
+    dataCursos.forEach(element => {
+        element.style.borderLeft = "4px solid #330867";
+    });
 
+    dataEduc.forEach(element => {
+        element.style.borderLeft = "4px solid #330867";
+    });
+   
     
     cardProyect.forEach(card => {
     card.style.background = "#330867";
