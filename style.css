@@ -290,29 +290,6 @@ body, #container {
   text-decoration: none;
 }
 
-.imgSkill {
-  width: 100%;
-}
-
-.imgSSoftkill{
-  width: 45%;
-}
-.Softskill {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 12%;
-}
-
-.skill {
-  width: 5%;
-  margin: 2%;
-}
-#skills h1, #skills h3{
-  width: 100%;
-}
-
 .imageProyect{
   width: 100%;
   border-radius: 13px;

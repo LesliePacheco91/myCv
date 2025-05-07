@@ -9,10 +9,6 @@ let container = document.getElementById('container');
 let iconLight = document.createElement('img');
 iconLight.setAttribute("class","iconLight");
 iconLight.src ="img/menu.png";
-/*
-let imgMenuResponsive = document.createElement('img');
-imgMenuResponsive.setAttribute("class","menuRespons");
-imgMenuResponsive.src ="img/menu.png";*/
 
 let imgMenuResponsive = document.createElement('i');
 imgMenuResponsive.setAttribute("id","menuRespons");
@@ -35,9 +31,6 @@ list.className = "listMenu";
 let lis1 = document.createElement('li');
 lis1.textContent = "Sobre mí";
 
-/*let lis2 = document.createElement('li');
-lis2.textContent = "Habilidades";
-*/
 let lis3 = document.createElement('li');
 lis3.textContent = "Proyectos";
 let lis4 = document.createElement('li');
@@ -189,43 +182,6 @@ textAbotuMe.textContent = arrayData.summary;
 let contact = document.createElement("div");
 contact.setAttribute("class","contact");
 
-// telefono
-let celfon = document.createElement("div");
-celfon.className = "tel"
-let imgCel = document.createElement("img");
-imgCel.className = "imgContact";
-imgCel.src = "img/celfon.png";
-let titleCel = document.createElement("h5");
-titleCel.textContent = arrayData.contact.phone;
-
-celfon.append(imgCel, titleCel);
-
-// ubicación 
-let adreees = document.createElement("div");
-adreees.className = "dir"
-let imgAd = document.createElement("img");
-imgAd.className = "imgContact";
-imgAd.src = "img/adress.png";
-let titleAd = document.createElement("h5");
-titleAd.textContent = arrayData.contact.address;
-
-adreees.append(imgAd, titleAd);
-
-
-// email 
-let ema = document.createElement("div");
-ema.className = "email"
-let imgEm = document.createElement("img");
-imgEm.className = "imgContact";
-imgEm.src = "img/email.png";
-
-let titleEm = document.createElement("h5");
-titleEm.textContent = arrayData.contact.email;
-
-ema.append(imgEm, titleEm);
-
-contact.append(celfon, adreees, ema);
-
 
 
 aboutme.append(titleAboutMe, textAbotuMe);
@@ -233,60 +189,6 @@ datainfo.append( nameInfo,titleinfo,);
 photoinfo.append(photo,datainfo, opeToWord );
 
 sectionAboutme.append(photoinfo, aboutme, socilaRed);
-
-
-// skills section
-let skillsSection = document.createElement('section');
-skillsSection.setAttribute("id","skills");
-
-let titleSkills = document.createElement('h1');
-titleSkills.textContent = "Habilidades";
-
-let titleSkillsTech = document.createElement('h3');
-titleSkillsTech.textContent = "Habilidades técnicas";
-
-let listSkillsTech = document.createElement('ul');
-listSkillsTech.className = "list-kills-tech";
-
-arrayData.techSkills.forEach(item => {
-
-    let dataSkill = document.createElement('li');
-    dataSkill.setAttribute("class","skill");
-    
-    let imgSkills = document.createElement('img');
-    imgSkills.setAttribute("class","imgSkill");
-    imgSkills.src = item.image;
-
-    dataSkill.appendChild(imgSkills);
-
-    listSkillsTech.append(dataSkill);
-
-});
-
-let titleSoftSkills = document.createElement('h3');
-titleSoftSkills.textContent = "Habilidades blandas";
-
-let listSoftSkills = document.createElement('ul');
-listSoftSkills.className = "list-soft-skills";
-
-arrayData.softSkills.forEach( row =>{
-
-    let dataSoftSkill = document.createElement('li');
-    dataSoftSkill.setAttribute("class","Softskill");
-    
-    let imgSoftSkills = document.createElement('img');
-    imgSoftSkills.setAttribute("class","imgSSoftkill");
-    imgSoftSkills.src = row.image;
-
-    let nameSkill = document.createElement('h5');
-    nameSkill.textContent = row.name;
-
-    dataSoftSkill.append(imgSoftSkills, nameSkill);
-
-    listSoftSkills.append(dataSoftSkill);
-});
-
-skillsSection.append(titleSkills, titleSkillsTech, listSkillsTech, titleSoftSkills, listSoftSkills );
 
 
 // proyect section
@@ -621,22 +523,6 @@ lis1.addEventListener('click', function(event) {
 
 });
 
-/*
-lis2.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-    skillsSection.scrollIntoView({ behavior: 'smooth' });
-
-    //lis2.setAttribute("class","menuActive");
-    lis1.removeAttribute("class","menuActive");
-    lis3.removeAttribute("class","menuActive");
-    lis4.removeAttribute("class","menuActive");
-    lis5.removeAttribute("class","menuActive");
-    lis6.removeAttribute("class","menuActive");
-    header.setAttribute("id","headerInfo");
-});
-
-*/
-
 lis3.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
     proyectSection.scrollIntoView({ behavior: 'smooth' });
@@ -722,7 +608,6 @@ buttonLigth.addEventListener('click', function(event) {
     eduSection.style.color = "#000";
 
     sectionAboutme.style.background = "#ffffffab";
-    skillsSection.style.background = "#ffffffab";
     proyectSection.style.background = "#ffffffab";
     couserSection.style.background = "#ffffffab";
     experienceSection.style.background = "#ffffffab";
@@ -803,7 +688,6 @@ buttonHigh.addEventListener('click', function(event) {
     opeToWord.style.border = "3px solid #330867";
 
     sectionAboutme.style.background = "#ffffff40";
-    skillsSection.style.background = "#ffffff40";
     proyectSection.style.background = "#ffffff40";
     couserSection.style.background = "#ffffff40";
     experienceSection.style.background = "#ffffff40";
