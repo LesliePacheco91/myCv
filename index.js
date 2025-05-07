@@ -9,10 +9,6 @@ let container = document.getElementById('container');
 let iconLight = document.createElement('img');
 iconLight.setAttribute("class","iconLight");
 iconLight.src ="img/menu.png";
-/*
-let imgMenuResponsive = document.createElement('img');
-imgMenuResponsive.setAttribute("class","menuRespons");
-imgMenuResponsive.src ="img/menu.png";*/
 
 let imgMenuResponsive = document.createElement('i');
 imgMenuResponsive.setAttribute("id","menuRespons");
@@ -35,9 +31,6 @@ list.className = "listMenu";
 let lis1 = document.createElement('li');
 lis1.textContent = "Sobre mí";
 
-/*let lis2 = document.createElement('li');
-lis2.textContent = "Habilidades";
-*/
 let lis3 = document.createElement('li');
 lis3.textContent = "Proyectos";
 let lis4 = document.createElement('li');
@@ -94,6 +87,11 @@ let titleinfo = document.createElement('h4');
 titleinfo.setAttribute("class","title");
 titleinfo.textContent = arrayData.title;
 
+let location= document.createElement('h5');
+location.setAttribute("class","location");
+location.innerHTML = `<i class="bi bi-geo-alt-fill"></i> ${arrayData.contact.address}`;
+
+
 let opeToWord = document.createElement('h2');
 opeToWord.setAttribute("class","opeWork");
 opeToWord.textContent ="Disponible para trabajar";
@@ -107,12 +105,10 @@ linkedin.href = arrayData.linkedin;
 linkedin.target = "blanck";
 linkedin.rel = 'noopener noreferrer';
 
-const iconoLinkeding = document.createElement('i');
-iconoLinkeding.className = 'bi-linkedin';
 const textoLinkeding = document.createElement('h4');
-textoLinkeding.textContent = "Linkeding";
+textoLinkeding.innerHTML = `<i class="bi-linkedin"></i> Linkeding`;
 
-linkedin.append(iconoLinkeding, textoLinkeding);
+linkedin.append(textoLinkeding);
 
 // gitHub
 let git = document.createElement('a');
@@ -120,13 +116,10 @@ git.href = arrayData.gitHub;
 git.target = "blanck";
 git.rel = 'noopener noreferrer';
 
-const iconoGit = document.createElement('i');
-iconoGit.className = 'bi-github'; 
-
 const textoGit = document.createElement('h4');
-textoGit.textContent = "GitHub";
+textoGit.innerHTML = `<i class="bi-github"></i> GitHub`;
 
-git.append(iconoGit, textoGit);
+git.append(textoGit);
 
 
 // trailhead 
@@ -150,14 +143,22 @@ let emailContact = document.createElement('a');
 emailContact.target = "blanck";
 emailContact.rel = 'noopener noreferrer';
 
-const iconoEmail = document.createElement('i');
-iconoEmail.className = 'bi-envelope-fill'; 
-
 const textContact = document.createElement('h4');
-textContact.textContent = "E-Mail";
+textContact.innerHTML = `<i class="'bi bi-envelope-at"></i> E-Mail`;
+
+emailContact.append(textContact);
+
+// telegram
+let telegramContact = document.createElement('a');
+telegramContact.href = arrayData.contact.telegram;
+telegramContact.target = "blanck";
+telegramContact.rel = 'noopener noreferrer';
+
+const textTelegram = document.createElement('h4');
+textTelegram.innerHTML = `<i class="'bi bi-telegram"></i> Telegram`;
 
 
-emailContact.append(iconoEmail, textContact);
+telegramContact.append(textTelegram);
 
 // button cv
 let buttonCv = document.createElement("a");
@@ -167,14 +168,12 @@ buttonCv.download = 'cv.pdf';
 buttonCv.rel = 'noopener noreferrer';
 
 const textButtom = document.createElement('h4');
-textButtom.textContent = "Obtener CV";
+textButtom.innerHTML = `<i class="'bi bi-cloud-download"></i> Currículum`;
 
-const iconoCV = document.createElement('i');
-iconoCV.className = 'bi-cloud-download'; 
 
-buttonCv.append(iconoCV, textButtom);
+buttonCv.append(textButtom);
 
-socilaRed.append(linkedin, git, trailhead, emailContact,  buttonCv);
+socilaRed.append(linkedin, git, emailContact, telegramContact,  buttonCv);
 
 
 let aboutme = document.createElement('div');
@@ -189,104 +188,13 @@ textAbotuMe.textContent = arrayData.summary;
 let contact = document.createElement("div");
 contact.setAttribute("class","contact");
 
-// telefono
-let celfon = document.createElement("div");
-celfon.className = "tel"
-let imgCel = document.createElement("img");
-imgCel.className = "imgContact";
-imgCel.src = "img/celfon.png";
-let titleCel = document.createElement("h5");
-titleCel.textContent = arrayData.contact.phone;
-
-celfon.append(imgCel, titleCel);
-
-// ubicación 
-let adreees = document.createElement("div");
-adreees.className = "dir"
-let imgAd = document.createElement("img");
-imgAd.className = "imgContact";
-imgAd.src = "img/adress.png";
-let titleAd = document.createElement("h5");
-titleAd.textContent = arrayData.contact.address;
-
-adreees.append(imgAd, titleAd);
-
-
-// email 
-let ema = document.createElement("div");
-ema.className = "email"
-let imgEm = document.createElement("img");
-imgEm.className = "imgContact";
-imgEm.src = "img/email.png";
-
-let titleEm = document.createElement("h5");
-titleEm.textContent = arrayData.contact.email;
-
-ema.append(imgEm, titleEm);
-
-contact.append(celfon, adreees, ema);
-
 
 
 aboutme.append(titleAboutMe, textAbotuMe);
-datainfo.append( nameInfo,titleinfo,);
+datainfo.append( nameInfo,titleinfo, location);
 photoinfo.append(photo,datainfo, opeToWord );
 
 sectionAboutme.append(photoinfo, aboutme, socilaRed);
-
-
-// skills section
-let skillsSection = document.createElement('section');
-skillsSection.setAttribute("id","skills");
-
-let titleSkills = document.createElement('h1');
-titleSkills.textContent = "Habilidades";
-
-let titleSkillsTech = document.createElement('h3');
-titleSkillsTech.textContent = "Habilidades técnicas";
-
-let listSkillsTech = document.createElement('ul');
-listSkillsTech.className = "list-kills-tech";
-
-arrayData.techSkills.forEach(item => {
-
-    let dataSkill = document.createElement('li');
-    dataSkill.setAttribute("class","skill");
-    
-    let imgSkills = document.createElement('img');
-    imgSkills.setAttribute("class","imgSkill");
-    imgSkills.src = item.image;
-
-    dataSkill.appendChild(imgSkills);
-
-    listSkillsTech.append(dataSkill);
-
-});
-
-let titleSoftSkills = document.createElement('h3');
-titleSoftSkills.textContent = "Habilidades blandas";
-
-let listSoftSkills = document.createElement('ul');
-listSoftSkills.className = "list-soft-skills";
-
-arrayData.softSkills.forEach( row =>{
-
-    let dataSoftSkill = document.createElement('li');
-    dataSoftSkill.setAttribute("class","Softskill");
-    
-    let imgSoftSkills = document.createElement('img');
-    imgSoftSkills.setAttribute("class","imgSSoftkill");
-    imgSoftSkills.src = row.image;
-
-    let nameSkill = document.createElement('h5');
-    nameSkill.textContent = row.name;
-
-    dataSoftSkill.append(imgSoftSkills, nameSkill);
-
-    listSoftSkills.append(dataSoftSkill);
-});
-
-skillsSection.append(titleSkills, titleSkillsTech, listSkillsTech, titleSoftSkills, listSoftSkills );
 
 
 // proyect section
@@ -367,12 +275,9 @@ arrayData.proyects.forEach(doc =>{
     urlProyect.target = "blank";
 
     let textUrlProyect = document.createElement('h4');
-    textUrlProyect.textContent = "Sitio";
-
-    let iconUrl = document.createElement('i');
-    iconUrl.className = "bi-link";
+    textUrlProyect.innerHTML = `<i class="bi bi-link"></i> Sitio`;
     
-    urlProyect.append(iconUrl, textUrlProyect);
+    urlProyect.append(textUrlProyect);
 
     
     // repositorio
@@ -382,12 +287,9 @@ arrayData.proyects.forEach(doc =>{
     urlRespository.target = "blank";
 
     let textRespository = document.createElement('h4');
-    textRespository.textContent = "Repositorio";
+    textRespository.innerHTML =  `<i class="bi bi-github"></i> Repositorio`;
 
-    let iconRespository = document.createElement('i');
-    iconRespository.className = "bi-github";
-
-    urlRespository.append(iconRespository, textRespository);
+    urlRespository.append(textRespository);
 
     let divIcons = document.createElement('div');
     divIcons.className = "contentIcons";
@@ -621,22 +523,6 @@ lis1.addEventListener('click', function(event) {
 
 });
 
-/*
-lis2.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-    skillsSection.scrollIntoView({ behavior: 'smooth' });
-
-    //lis2.setAttribute("class","menuActive");
-    lis1.removeAttribute("class","menuActive");
-    lis3.removeAttribute("class","menuActive");
-    lis4.removeAttribute("class","menuActive");
-    lis5.removeAttribute("class","menuActive");
-    lis6.removeAttribute("class","menuActive");
-    header.setAttribute("id","headerInfo");
-});
-
-*/
-
 lis3.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
     proyectSection.scrollIntoView({ behavior: 'smooth' });
@@ -700,9 +586,15 @@ let urlInsti = document.querySelectorAll('.education a');
 let urlCurse = document.querySelectorAll('.curse a');
 let experi = document.querySelectorAll('.exprience h4');
 let botonMolaClose = document.querySelectorAll('#btn-close');
+let redes = document.querySelectorAll('.redes a');
+let menuActive = document.querySelector('.menuActive');
+let dataCursos = document.querySelectorAll(".curse");
+let dataEduc = document.querySelectorAll(".education");
 
 
 buttonLigth.addEventListener('click', function(event) {
+
+    photo.src = "img/leslieP.jpg";
     event.preventDefault(); 
 
     imgTrailhead.src = 'img/Trailhead.png';
@@ -720,7 +612,6 @@ buttonLigth.addEventListener('click', function(event) {
     eduSection.style.color = "#000";
 
     sectionAboutme.style.background = "#ffffffab";
-    skillsSection.style.background = "#ffffffab";
     proyectSection.style.background = "#ffffffab";
     couserSection.style.background = "#ffffffab";
     experienceSection.style.background = "#ffffffab";
@@ -730,69 +621,78 @@ buttonLigth.addEventListener('click', function(event) {
     opeToWord.style.background = "#94BBE9";
     opeToWord.style.border = "3px solid #A2A3F7";
 
-    linkedin.style.color = "#d447a0";
-    git.style.color = "#d447a0";
-    trailhead.style.color = "#d447a0";
-    emailContact.style.color = "#d447a0";
-    buttonCv.style.color = "#d447a0";
+
+    redes.forEach(rd => {
+        rd.style.color = "#d447a0";
+    });
+
 
     cardProyect.forEach(card => {
         card.style.background = "linear-gradient(137deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252, 1) 100%)";
-        });
+    });
     
-        btnUrl.forEach(btn => {
-            btn.style.background = "#5296E6";
-        });
-        
-       
-       
-        urlProyect.forEach(urlP =>{
-            urlP.style.border = "1px solid #000";
-            urlP.style.color = "#000";
-        })
-        
+    btnUrl.forEach(btn => {
+        btn.style.background = "#5296E6";
+    });
     
-        urlRespository.forEach(repo => {
-            repo.style.border = "1px solid #000";
-            repo.style.color = "#000";
-        });
+    
+    
+    urlProyect.forEach(urlP =>{
+        urlP.style.border = "1px solid #000";
+        urlP.style.color = "#000";
+    })
+    
 
-        institutionEdu.forEach(edu =>{
-            edu.style.color = "#5296E6";
-        });
-    
-        instiCurse.forEach(cur =>{
-            cur.style.color = "#5296E6";
-        });
-    
-        urlInsti.forEach(url =>{
-            url.style.color = "#d447a0";
-        });
-    
-        urlCurse.forEach(urlC =>{
-            urlC.style.color = "#d447a0";
-        });
-    
-        experi.forEach(exp => {
-            exp.style.color = "#5296E6";
-        });
+    urlRespository.forEach(repo => {
+        repo.style.border = "1px solid #000";
+        repo.style.color = "#000";
+    });
 
-        botonMolaClose.forEach(btnMdl =>{
-            btnMdl.style.color = "#d447a0";
-            btnMdl.style.border = "3px solid #d447a0";
-            btnMdl.style.background = "#fff";
-        })
+    institutionEdu.forEach(edu =>{
+        edu.style.color = "#5296E6";
+    });
+
+    instiCurse.forEach(cur =>{
+        cur.style.color = "#5296E6";
+    });
+
+    urlInsti.forEach(url =>{
+        url.style.color = "#d447a0";
+    });
+
+    urlCurse.forEach(urlC =>{
+        urlC.style.color = "#d447a0";
+    });
+
+    experi.forEach(exp => {
+        exp.style.color = "#5296E6";
+    });
+
+    dataCursos.forEach(element => {
+        element.style.borderLeft = "4px solid #94BBE9";
+    });
+
+    dataEduc.forEach(element => {
+        element.style.borderLeft = "4px solid #94BBE9";
+    });
+
+    botonMolaClose.forEach(btnMdl =>{
+        btnMdl.style.color = "#d447a0";
+        btnMdl.style.border = "3px solid #d447a0";
+        btnMdl.style.background = "#fff";
+    })
 
 });
 
 buttonHigh.addEventListener('click', function(event) {
     event.preventDefault(); 
-    imgMenuResponsive.style.color = "#30CFD0";
 
+    photo.src = "img/leslie.png";
+    imgMenuResponsive.style.color = "#30CFD0";
+    
     imgTrailhead.src = 'img/Trailhead3.png';
 
    bodyContend.style.background = "linear-gradient(90deg,rgba(48, 195, 202, 1) 0%, rgba(51, 8, 103, 1) 43%)";
-    //bodyContend.style.background = "#330867";
     buttonLigth.style.display = "block";
     buttonHigh.style.display = "none";
 
@@ -801,7 +701,6 @@ buttonHigh.addEventListener('click', function(event) {
     opeToWord.style.border = "3px solid #330867";
 
     sectionAboutme.style.background = "#ffffff40";
-    skillsSection.style.background = "#ffffff40";
     proyectSection.style.background = "#ffffff40";
     couserSection.style.background = "#ffffff40";
     experienceSection.style.background = "#ffffff40";
@@ -813,15 +712,19 @@ buttonHigh.addEventListener('click', function(event) {
     experienceSection.style.color = "#fff";
     eduSection.style.color = "#fff";
 
-    linkedin.style.color = "#fff";
-    git.style.color = "#fff";
-    trailhead.style.color = "#fff";
-    emailContact.style.color = "#fff";
-    buttonCv.style.color = "#fff";
+    redes.forEach(rd => {
+        rd.style.color = "#fff";
+    });
 
 
-    eduSection.style.color = "#fff";
+    dataCursos.forEach(element => {
+        element.style.borderLeft = "4px solid #330867";
+    });
 
+    dataEduc.forEach(element => {
+        element.style.borderLeft = "4px solid #330867";
+    });
+   
     
     cardProyect.forEach(card => {
     card.style.background = "#330867";

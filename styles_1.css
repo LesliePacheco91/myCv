@@ -58,6 +58,7 @@ body, #container {
   flex-wrap: wrap;
   border-radius: 20px;
   box-shadow: 1px 10px 19px -6px rgba(0,0,0,0.44);
+  z-index: 2;
 }
 
 .textAbotuME p{
@@ -137,17 +138,6 @@ body, #container {
 .urlProyect h4, .urlRespository h4{
   margin: 0 0 0 6px;
 }
-.list-kills-tech{
-  list-style: none;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  color: var(--color-3);
-  width: 100%;
-  padding: 0;
-}
 
 .redes {
   width: 90%;
@@ -160,10 +150,10 @@ body, #container {
 }
 
 .redes a {
-  width: 13%;
+  width: 12%;
   padding: 1%;
-  display: flex;
-  flex-direction: row;
+ /* display: flex;
+  flex-direction: row;*/
   border:1px solid;
   border-radius:10px;
   text-decoration: none;
@@ -172,6 +162,11 @@ body, #container {
   align-content: center;
   color: var(--color-7);
   cursor: pointer;
+  font-size: 14px;
+}
+
+.redes a:hover{
+  transform: scale(1.1);
 }
 
 .redes a h4{
@@ -234,7 +229,7 @@ body, #container {
       60% {
         transform: scale(1);
       }
- }
+}
 
 #skills {
   display: flex;
@@ -356,7 +351,7 @@ body, #container {
   margin: 0 3%;
 }
 
-.name, .title{
+.name, .title, .location{
     width: 100%;
 	margin: 2% 0 0 0;
 }
@@ -408,8 +403,9 @@ body, #container {
   width: 28%;
   margin-bottom: 2%;
   background: var(--color-0);
-  
 }
+
+
 
 .cardProyect h3{
   margin-top: 0;
@@ -426,6 +422,7 @@ body, #container {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 
 .contentIcons img {
   width: 50%;
@@ -639,6 +636,7 @@ body, #container {
   .opeWork{
     margin-left: 0;
     width: 65%;
+    width: 65%;
   }
   #aboutme{
     margin-top:25%;
@@ -664,7 +662,7 @@ body, #container {
   }
 
   .redes a h4{
-    font-size: 13px;
+    font-size: 18px;
     align-items: center;
   }
 
@@ -834,9 +832,6 @@ body, #container {
     width: 90%;
     padding: 0;
     margin: 0;
-  }
-  .list-proyects{
-    /*justify-content: center;*/
   }
   .urlProyect img, .urlRespository img{
     width: 100%;
