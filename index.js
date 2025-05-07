@@ -155,7 +155,7 @@ telegramContact.target = "blanck";
 telegramContact.rel = 'noopener noreferrer';
 
 const textTelegram = document.createElement('h4');
-textTelegram.innerHTML = `<i class="'bi bi-telegram"></i> Escribeme`;
+textTelegram.innerHTML = `<i class="'bi bi-telegram"></i> Telegram`;
 
 
 telegramContact.append(textTelegram);
@@ -168,12 +168,12 @@ buttonCv.download = 'cv.pdf';
 buttonCv.rel = 'noopener noreferrer';
 
 const textButtom = document.createElement('h4');
-textButtom.innerHTML = `<i class="'bi bi-cloud-download"></i> Escribeme`; "Obtener CV";
+textButtom.innerHTML = `<i class="'bi bi-cloud-download"></i> Currículum`;
 
 
 buttonCv.append(textButtom);
 
-socilaRed.append(linkedin, git, trailhead, emailContact, telegramContact,  buttonCv);
+socilaRed.append(linkedin, git, emailContact, telegramContact,  buttonCv);
 
 
 let aboutme = document.createElement('div');

@@ -150,10 +150,10 @@ body, #container {
 }
 
 .redes a {
-  width: 13%;
+  width: 12%;
   padding: 1%;
-  display: flex;
-  flex-direction: row;
+ /* display: flex;
+  flex-direction: row;*/
   border:1px solid;
   border-radius:10px;
   text-decoration: none;
@@ -162,6 +162,7 @@ body, #container {
   align-content: center;
   color: var(--color-7);
   cursor: pointer;
+  font-size: 14px;
 }
 
 .redes a:hover{
@@ -661,7 +662,7 @@ body, #container {
   }
 
   .redes a h4{
-    font-size: 13px;
+    font-size: 18px;
     align-items: center;
   }
 
