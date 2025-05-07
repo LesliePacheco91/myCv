@@ -511,7 +511,7 @@ imgFlech.addEventListener('click', function(event) {
 
 lis1.addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-    sectionAboutme.scrollIntoView({ behavior: 'smooth' });
+    aboutme.scrollIntoView({ behavior: 'smooth' });
 
     lis1.setAttribute("class","menuActive");
     //lis2.removeAttribute("class","menuActive");
@@ -574,8 +574,6 @@ lis6.addEventListener('click', function(event) {
     lis5.removeAttribute("class","menuActive");
     header.setAttribute("id","headerInfo");
 });
-
-
 // cambio de color
 let bodyContend = document.querySelector('#container');
 let btnUrl= document.querySelectorAll('.btn-url');
@@ -773,3 +771,4 @@ emailContact.addEventListener('click', function(event){
     // Redirige al cliente de correo
     window.location.href = enlaceCorreo;
 })
+

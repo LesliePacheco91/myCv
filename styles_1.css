@@ -77,7 +77,7 @@ body, #container {
 }
 
 .menu{
-	width: 95%;
+   width: 95%;
 }
 
 .buttonLigth, .buttonhigh {
@@ -96,7 +96,7 @@ body, #container {
   width: 100%;
 }
 
-.list-soft-skills, .listMenu{
+.listMenu{
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -107,6 +107,7 @@ body, #container {
   width: 100%;
   padding: 0;
   font-weight:bold;
+  margin:1% 0 1% 0;
 }
 
 .list-proyects{
@@ -234,6 +235,9 @@ body, #container {
         transform: scale(1);
       }
     }
+    animation: heartbeat 8s infinite;
+}
+
 #skills {
   display: flex;
   align-content: center;
@@ -636,6 +640,7 @@ body, #container {
 
   .opeWork{
     margin-left: 0;
+    width: 65%;
     width: 65%;
   }
   #aboutme{
