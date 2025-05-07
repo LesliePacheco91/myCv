@@ -87,6 +87,11 @@ let titleinfo = document.createElement('h4');
 titleinfo.setAttribute("class","title");
 titleinfo.textContent = arrayData.title;
 
+let location= document.createElement('h5');
+location.setAttribute("class","location");
+location.innerHTML = `<i class="bi bi-geo-alt-fill"></i> ${arrayData.contact.address}`;
+
+
 let opeToWord = document.createElement('h2');
 opeToWord.setAttribute("class","opeWork");
 opeToWord.textContent ="Disponible para trabajar";
@@ -100,12 +105,10 @@ linkedin.href = arrayData.linkedin;
 linkedin.target = "blanck";
 linkedin.rel = 'noopener noreferrer';
 
-const iconoLinkeding = document.createElement('i');
-iconoLinkeding.className = 'bi-linkedin';
 const textoLinkeding = document.createElement('h4');
-textoLinkeding.textContent = "Linkeding";
+textoLinkeding.innerHTML = `<i class="bi-linkedin"></i> Linkeding`;
 
-linkedin.append(iconoLinkeding, textoLinkeding);
+linkedin.append(textoLinkeding);
 
 // gitHub
 let git = document.createElement('a');
@@ -113,13 +116,10 @@ git.href = arrayData.gitHub;
 git.target = "blanck";
 git.rel = 'noopener noreferrer';
 
-const iconoGit = document.createElement('i');
-iconoGit.className = 'bi-github'; 
-
 const textoGit = document.createElement('h4');
-textoGit.textContent = "GitHub";
+textoGit.innerHTML = `<i class="bi-github"></i> GitHub`;
 
-git.append(iconoGit, textoGit);
+git.append(textoGit);
 
 
 // trailhead 
@@ -143,13 +143,10 @@ let emailContact = document.createElement('a');
 emailContact.target = "blanck";
 emailContact.rel = 'noopener noreferrer';
 
-const iconoEmail = document.createElement('i');
-iconoEmail.className = 'bi-envelope-fill'; 
-
 const textContact = document.createElement('h4');
-textContact.textContent = "E-Mail";
+textContact.innerHTML = `<i class="'bi bi-envelope-at"></i> E-Mail`;
 
-emailContact.append(iconoEmail, textContact );
+emailContact.append(textContact);
 
 // telegram
 let telegramContact = document.createElement('a');
@@ -157,14 +154,11 @@ telegramContact.href = arrayData.contact.telegram;
 telegramContact.target = "blanck";
 telegramContact.rel = 'noopener noreferrer';
 
-const iconoTelegram = document.createElement('i');
-iconoTelegram.className = 'bi-telegram'; 
-
 const textTelegram = document.createElement('h4');
-textTelegram.textContent = "Escribeme";
+textTelegram.innerHTML = `<i class="'bi bi-telegram"></i> Escribeme`;
 
 
-telegramContact.append(iconoTelegram, textTelegram);
+telegramContact.append(textTelegram);
 
 // button cv
 let buttonCv = document.createElement("a");
@@ -174,12 +168,10 @@ buttonCv.download = 'cv.pdf';
 buttonCv.rel = 'noopener noreferrer';
 
 const textButtom = document.createElement('h4');
-textButtom.textContent = "Obtener CV";
+textButtom.innerHTML = `<i class="'bi bi-cloud-download"></i> Escribeme`; "Obtener CV";
 
-const iconoCV = document.createElement('i');
-iconoCV.className = 'bi-cloud-download'; 
 
-buttonCv.append(iconoCV, textButtom);
+buttonCv.append(textButtom);
 
 socilaRed.append(linkedin, git, trailhead, emailContact, telegramContact,  buttonCv);
 
@@ -199,7 +191,7 @@ contact.setAttribute("class","contact");
 
 
 aboutme.append(titleAboutMe, textAbotuMe);
-datainfo.append( nameInfo,titleinfo,);
+datainfo.append( nameInfo,titleinfo, location);
 photoinfo.append(photo,datainfo, opeToWord );
 
 sectionAboutme.append(photoinfo, aboutme, socilaRed);
@@ -283,12 +275,9 @@ arrayData.proyects.forEach(doc =>{
     urlProyect.target = "blank";
 
     let textUrlProyect = document.createElement('h4');
-    textUrlProyect.textContent = "Sitio";
-
-    let iconUrl = document.createElement('i');
-    iconUrl.className = "bi-link";
+    textUrlProyect.innerHTML = `<i class="bi bi-link"></i> Sitio`;
     
-    urlProyect.append(iconUrl, textUrlProyect);
+    urlProyect.append(textUrlProyect);
 
     
     // repositorio
@@ -298,12 +287,9 @@ arrayData.proyects.forEach(doc =>{
     urlRespository.target = "blank";
 
     let textRespository = document.createElement('h4');
-    textRespository.textContent = "Repositorio";
+    textRespository.innerHTML =  `<i class="bi bi-github"></i> Repositorio`;
 
-    let iconRespository = document.createElement('i');
-    iconRespository.className = "bi-github";
-
-    urlRespository.append(iconRespository, textRespository);
+    urlRespository.append(textRespository);
 
     let divIcons = document.createElement('div');
     divIcons.className = "contentIcons";

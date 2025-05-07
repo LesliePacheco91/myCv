@@ -350,7 +350,7 @@ body, #container {
   margin: 0 3%;
 }
 
-.name, .title{
+.name, .title, .location{
     width: 100%;
 	margin: 2% 0 0 0;
 }

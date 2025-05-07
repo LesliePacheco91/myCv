@@ -9,7 +9,7 @@ export default{
         "contact":{
           "email": "lesliepacheco62@gmail.com",
           "phone": "+(52) 997-113-57-83",
-          "address": "Mérida Yucatán México",
+          "address": "Mérida Yucatán, México",
           "telegram":"https://t.me/Lesli_PC"
         },
         "summary": "Ingeniera en Sistemas Computacionales y Desarrolladora Web con más de 3 años de experiencia en la industria. Mi especialización en Front-end, combinada con mi pasión por el diseño y la programación, me ha permitido crear soluciones tecnológicas innovadoras que optimizan la eficiencia y facilitan el logro de objetivos. El trabajo en equipo, autoaprendizaje, adaptabilidad y mi creatividad ha sido clave para implementar soluciones efectivas y superar desafíos con éxito. Me rijo por principios de honestidad, responsabilidad y organización, estoy profundamente comprometida con el avance tecnológico y su impacto positivo en la sociedad.",
