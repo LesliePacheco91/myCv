@@ -106,7 +106,7 @@ linkedin.target = "blanck";
 linkedin.rel = 'noopener noreferrer';
 
 const textoLinkeding = document.createElement('h4');
-textoLinkeding.innerHTML = `<i class="bi-linkedin"></i> Linkeding`;
+textoLinkeding.innerHTML = `<i class="bi-linkedin"></i> LinkedIn`;
 
 linkedin.append(textoLinkeding);
 
