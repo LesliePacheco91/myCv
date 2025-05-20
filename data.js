@@ -546,7 +546,8 @@ export default{
                     {
                         "id":"4",
                         "image":"img/skills/jwt.png",
-                        "name":"HTML"
+                        "name":"JWT",
+                        "color":"rgba(60, 105, 240, 0.32)"
                     },
                     {
                         "id":"5",
