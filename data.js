@@ -346,6 +346,7 @@ export default{
                 "name":"Sistema de evaluación docente",
                 "description":"Aplicación web para automatizar el proceso de evaluación docente en la Universidad Tecnológica de Mayab. Esta aplicación permite a los estudiantes realizar evaluaciones a través de un formulario web y genera resultados automáticos, presentándolos con gráficos visuales. La plataforma admite sesiones multiusuario y ha mejorado la eficiencia del proceso en un 60%, eliminando completamente el error humano. Los resultados se preparan y presentan en un documento PDF.",
                 "image":"img/portafolio/2.png",
+                "repository":"https://github.com/LesliePacheco91/EVDOCENTE.git",
                 "languales":[
                     {
                         "id":"1",
