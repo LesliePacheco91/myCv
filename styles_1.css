@@ -828,10 +828,7 @@ body, #container {
     width: 8em;
     height: 8em;
   }
-/*
-  .tel img, .dir img, .email img{
-    display: none;
-  }*/
+
   .contact{
     width: 95%;
     justify-content: center;
@@ -859,7 +856,7 @@ body, #container {
     width: 18%;
   }
   .cardProyect {
-    width: 43%;
+    width: 47%;
     margin-bottom: 4%;
   }
 
@@ -895,12 +892,9 @@ body, #container {
     margin: 0;
     margin-top:4%
   }
-  .urlProyect img, .urlRespository img{
-    width: 100%;
-  }
 
   .urlProyect, .urlRespository {
-    width: 40%;
+    width: 41%;
   }
 
   #contentIconsActive{
