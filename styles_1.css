@@ -739,9 +739,13 @@ body, #container {
     margin: 3% 0;
   }
 
-  #activeCard h3{
-    width: 83%;
+  .titleProyect{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
   }
+
 
   .contendDescrip {
     width: 90%;
