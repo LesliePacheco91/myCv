@@ -218,6 +218,7 @@ arrayData.proyects.forEach(doc =>{
 
     let titleProyect = document.createElement('h3');
     titleProyect.textContent = doc.name;
+    titleProyect.className = "title-proyecto"
 
     let imgProyect = document.createElement('img');
     imgProyect.className = "imageProyect";
@@ -248,6 +249,8 @@ arrayData.proyects.forEach(doc =>{
 
 
     let lisLenguale = document.createElement('ul');
+    lisLenguale.className = "list-languaje";
+
 
     doc.languales.forEach(lan=>{
 
@@ -257,7 +260,7 @@ arrayData.proyects.forEach(doc =>{
         let imgLanguaje = document.createElement('i');
         imgLanguaje.className = lan.image;
 
-        let nameLanguaje = document.createElement("h5");
+        let nameLanguaje = document.createElement("h6");
         nameLanguaje.textContent = lan.name;
 
         languaje.style.background = lan.color;
@@ -316,7 +319,12 @@ arrayData.proyects.forEach(doc =>{
           contedDescripcion.removeAttribute("id","contendDescrip");
           buttonUrl.setAttribute("id","btnDisable");
           divIcons.setAttribute("id","contentIconsActive");
+          lisLenguale.removeAttribute("class", "list-languaje");
+          lisLenguale.setAttribute("id","list-languajes-active");
+       
           buttonCloseCarActive.removeAttribute("class","btn-close");
+          dataProyect.removeChild(divIcons);
+          contedDescripcion.append(lisLenguale, divIcons);
 
       });
 
@@ -330,10 +338,18 @@ arrayData.proyects.forEach(doc =>{
         buttonUrl.removeAttribute("id","btnDisable");
         divIcons.removeAttribute("id","contentIconsActive");
         buttonCloseCarActive.setAttribute("class","btn-close");
+
+         lisLenguale.setAttribute("class", "list-languaje");
+          lisLenguale.removeAttribute("id","list-languajes-active");
+        contedDescripcion.removeChild(lisLenguale);
+         //dataProyect.append(lisLenguale);
+          dataProyect.append( titleProyect,buttonCloseCarActive, imgProyect,  contedDescripcion  , lisLenguale, divIcons);
+
+
       })
 
 
-      contedDescripcion.append(titledesc, descriptionProyect, titleLogro, descriptionLogro, lisLenguale);
+      contedDescripcion.append(titledesc, descriptionProyect, titleLogro, descriptionLogro);
 
     if(doc.url != null || doc.url != undefined) {
         divIcons.append(urlProyect);
@@ -345,7 +361,7 @@ arrayData.proyects.forEach(doc =>{
     }
    
     divIcons.append(buttonUrl);
-    dataProyect.append( titleProyect,buttonCloseCarActive, imgProyect,  contedDescripcion, divIcons);
+    dataProyect.append( titleProyect,buttonCloseCarActive, imgProyect,  contedDescripcion  , lisLenguale, divIcons);
     listProtects.append(dataProyect);
 
 });

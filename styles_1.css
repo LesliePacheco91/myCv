@@ -388,7 +388,7 @@ body, #container {
 }
 
 .imageProyect{
-  width: 100%;
+  width: 36%;
   border-radius: 13px;
 }
 
@@ -396,21 +396,21 @@ body, #container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding: 2%;
+  padding: 1%;
   border-radius: 21px;
-  width: 28%;
+  width: 30%;
   margin-bottom: 2%;
   background: var(--color-0);
 }
 
 
 
-.cardProyect h3{
+.title-proyecto{
   margin-top: 0;
   text-align: center;
-  width: 80%;
+  width: 90%;
 }
 
 .contentIcons {
@@ -476,19 +476,19 @@ body, #container {
 }
 
 #descProyect, #logroProyect{
-  width: 90%;
-  padding: 2%;
+  width: 97%;
+  /*padding: 2%;*/
   text-align: justify;
   margin: 0;
-  margin-left: 3%;
+  /*margin-left: 3%;*/
 }
 
 .titleProyect {
   width: 80%;
-  padding: 2% 0% 0% 2%;
+ /* padding: 2% 0% 0% 2%;*/
   text-align: justify;
   margin: 0;
-  margin-left: 3%;
+  /*margin-left: 3%;*/
 }
 
 #imgActiveCard{
@@ -501,11 +501,12 @@ body, #container {
 
 
 #contentIconsActive{
-    width: 40%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 
 }
 
@@ -526,11 +527,27 @@ body, #container {
 }
 
 .contendDescrip {
-  width: 60%;
+  width: 57%;
+}
+
+
+#list-languajes-active {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8%;
+  padding: 0;
+
+}
+
+#list-languajes-active .languaje{
+   width: 10%;
 }
 
 .languaje {
-  width: 15%;
+  width: 29%;
   list-style: none;
   padding: 1%;
   display: flex;
@@ -541,18 +558,17 @@ body, #container {
   margin-right: 2%;
 }
 
-.languaje h5{
+.languaje h6{
   margin: 0 0 0 4px;
 }
-.contendDescrip ul {
+
+.list-languaje{
+  padding-left: 2%;
+  width: 60%;
   display: flex;
-  justify-content: initial;
-  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 8%;
 }
-
 
 /* Estilos para tablets y dispositivos más pequeños */
 @media (max-width:  768px) {
@@ -690,6 +706,10 @@ body, #container {
     margin: 0 0 11% 0;
   }
 
+  .imageProyect{
+    width: 90%;
+  }
+
   #activeCard{
     position: relative;
     width: 100%;
@@ -697,6 +717,13 @@ body, #container {
     margin-bottom: 11%;
     background: var(--color-0);
     transition: width 0.5s ease, height 0.7s ease;
+  }
+
+  .list-languaje{
+    width: 90%;
+    padding: 0;
+    margin-top: 6%;
+    justify-content: center;
   }
 
   .btn-url{
@@ -718,14 +745,28 @@ body, #container {
 
   .contendDescrip {
     width: 90%;
-    font-size: 20px;
   }
+
+
   .languaje{
-    width: 42%;
+    margin-right: 10px;
+  }
+
+  #descProyect, #logroProyect{
+    font-size: 20px;;
+  }
+
+  .languaje{
+    width: 28%;
+  }
+
+  #list-languajes-active .languaje{
+    width: 28%;
+
   }
   #contentIconsActive{
-    width: 90%;
-    margin: 3% 0;
+    width: 100%;
+    margin: 8% 0;
   }
   .contentIcons img{
     width: 100%;
@@ -817,21 +858,38 @@ body, #container {
     width: 43%;
     margin-bottom: 4%;
   }
+
+ .imageProyect{
+  width: 90%;
+
+ }
+
+ .list-languaje{
+  width: 90%;
+  margin-top: 8%;
+
+ }
   #activeCard{
     width:80%;
     justify-content:center;
   }
   
   #activeCard h3{
-    width: 70%;
+    width: 80%;
   }
   #imgActiveCard{
     width: 90%;
+  }
+
+  .titleProyect{
+    width: 90% !important;
+    margin-top: 4%;
   }
   .contendDescrip{
     width: 90%;
     padding: 0;
     margin: 0;
+    margin-top:4%
   }
   .urlProyect img, .urlRespository img{
     width: 100%;
