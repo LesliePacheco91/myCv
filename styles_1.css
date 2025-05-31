@@ -875,16 +875,16 @@ body, #container {
     justify-content:center;
   }
   
-  #activeCard h3{
-    width: 80%;
-  }
   #imgActiveCard{
     width: 90%;
   }
 
   .titleProyect{
-    width: 90% !important;
+    width: 100%;
     margin-top: 4%;
+    margin-bottom: 3%;
+    text-align: center;
+	  
   }
   .contendDescrip{
     width: 90%;
