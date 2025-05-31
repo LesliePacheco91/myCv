@@ -706,6 +706,10 @@ body, #container {
     margin: 0 0 11% 0;
   }
 
+.title-proyecto{
+    width: 85%;
+  }
+
   .imageProyect{
     width: 90%;
   }
