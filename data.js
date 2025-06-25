@@ -665,6 +665,52 @@ export default{
                         "color":"#25678380"
                     },
                 ]
+            },
+            {
+                "id":"9",
+                "name":"Spoti API",
+                "description":"Aplicación web que permite el registro, modificación y eliminación de productos, así como el control de inventario y la gestión de ventas en tiempo real. Además, incluye funcionalidades de inicio de sesión para distintos tipos de usuarios, control de accesos, aplicando el modelo Vista-Controlador (MVC) y programación orientada a objetos para asegurar una estructura clara y escalable. El sistema fue diseñado con un enfoque en la usabilidad y la eficiencia operativa.",
+                "image":"img/portafolio/spoty.png",
+                "url":"https://stark-sea-43598-52d86e080b07.herokuapp.com/documentation/",
+                "repository":"https://github.com/LesliePacheco91/spotyAPI",
+                "languales":[
+                    {
+                        "id":"1",
+                        "image":"devicon-html5-plain colored",
+                        "name":"HTML",
+                        "color":"rgba(234, 160, 141, 0.32)"
+                    },
+                    {
+                        "id":"2",
+                        "image":"devicon-css3-plain colored",
+                        "name":"CSS",
+                        "color":"rgba(61, 143, 198, 0.34)"
+                    },
+                    {
+                        "id":"3",
+                        "image":"devicon-javascript-plain colored",
+                        "name":"JavaScript",
+                        "color":"rgba(236, 221, 125, 0.32)"
+                    },
+                    {
+                        "id":"4",
+                        "image":"devicon-bootstrap-plain colored",
+                        "name":"Bootstrap",
+                        "color":"rgba(190, 162, 247, 0.5)"
+                    },
+                    {
+                        "id":"5",
+                        "image":"devicon-php-plain colored",
+                        "name":"PHP",
+                        "color":"#8487b385"
+                    },
+                    {
+                        "id":"6",
+                        "image":"devicon-mysql-original colored",
+                        "name":"MYSQL",
+                        "color":"#25678380"
+                    },
+                ]
             }
         ],
         "languages": [
