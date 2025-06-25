@@ -676,39 +676,63 @@ export default{
                 "languales":[
                     {
                         "id":"1",
-                        "image":"devicon-html5-plain colored",
-                        "name":"HTML",
-                        "color":"rgba(234, 160, 141, 0.32)"
+                        "image":"devicon-nodejs-plain colored",
+                        "name":"NodeJs",
+                        "color":"#69a15a63"
                     },
                     {
                         "id":"2",
-                        "image":"devicon-css3-plain colored",
-                        "name":"CSS",
-                        "color":"rgba(61, 143, 198, 0.34)"
+                        "image":"devicon-postman-plain colored",
+                        "name":"Postman",
+                        "color":"#f886536e"
                     },
                     {
-                        "id":"3",
+                       "id":"3",
                         "image":"devicon-javascript-plain colored",
                         "name":"JavaScript",
                         "color":"rgba(236, 221, 125, 0.32)"
                     },
                     {
                         "id":"4",
-                        "image":"devicon-bootstrap-plain colored",
-                        "name":"Bootstrap",
-                        "color":"rgba(190, 162, 247, 0.5)"
+                        "image":"img/skills/jwt.png",
+                        "name":"JWT",
+                        "color":"rgba(60, 105, 240, 0.32)"
                     },
                     {
                         "id":"5",
-                        "image":"devicon-php-plain colored",
-                        "name":"PHP",
-                        "color":"#8487b385"
+                        "image":"devicon-mongodb-plain colored",
+                        "name":"MongoDB",
+                        "color":"#5aaa4d52"
                     },
                     {
                         "id":"6",
+                        "image":"devicon-jest-plain colored",
+                        "name":"JEST",
+                        "color":"#a2566c63"
+                    },
+                    {
+                        "id":"7",
+                        "image":"devicon-git-plain colored",
+                        "name":"GIT",
+                        "color":"#fb8a7061"
+                    },
+                    {
+                        "id":"8",
                         "image":"devicon-mysql-original colored",
                         "name":"MYSQL",
                         "color":"#25678380"
+                    },
+                    {
+                        "id":"9",
+                        "image":"devicon-heroku-plain-wordmark colored",
+                        "name":"Heroku",
+                        "color":"#8a84d6"
+                    },
+                    {
+                        "id":"10",
+                        "image":"devicon-swagger-plain colored",
+                        "name":"Swagger",
+                        "color":"#c6eca5"
                     },
                 ]
             }
