@@ -708,7 +708,7 @@ buttonHigh.addEventListener('click', function(event) {
     
     imgTrailhead.src = 'img/Trailhead3.png';
 
-   bodyContend.style.background = "linear-gradient(90deg,rgba(48, 195, 202, 1) 0%, rgba(51, 8, 103, 1) 43%)";
+   bodyContend.style.background = "linear-gradient(90deg, rgb(25, 120, 124) 0%, rgb(51, 8, 103) 43%)";
     buttonLigth.style.display = "block";
     buttonHigh.style.display = "none";
 
