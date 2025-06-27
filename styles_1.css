@@ -918,3 +918,19 @@ body, #container {
   }
 
 }
+
+@media (min-width: 1081px) and (max-width: 1400px) {
+
+	.opeWork {
+	  width: 23%;
+	  font-size: 15px;
+	  margin-left: 5em;
+	}
+	.redes a {
+	  width: 15%;
+	}
+
+	.cardProyect {
+	  width: 47%;
+	}
+}
