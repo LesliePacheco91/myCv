@@ -675,7 +675,7 @@ export default{
             },
             {
                 "id":"9",
-                "name":"Spoti API",
+                "name":"API REST SpotiAPI",
                 "description":"Aplicación web que permite el registro, modificación y eliminación de productos, así como el control de inventario y la gestión de ventas en tiempo real. Además, incluye funcionalidades de inicio de sesión para distintos tipos de usuarios, control de accesos, aplicando el modelo Vista-Controlador (MVC) y programación orientada a objetos para asegurar una estructura clara y escalable. El sistema fue diseñado con un enfoque en la usabilidad y la eficiencia operativa.",
                 "image":"img/portafolio/spoty.png",
                 "url":"https://stark-sea-43598-52d86e080b07.herokuapp.com/documentation/",
