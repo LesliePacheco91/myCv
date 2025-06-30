@@ -62,6 +62,13 @@ export default{
           }
         ],
         "couses":[
+             {
+                "id":"2",
+                "name":"API REST Nodejs desde cero usando MongoDB o MySQL",
+                "date":" 30/06/2025",
+                "academy":"Udemy",
+                "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-726033db-a30b-420c-a41a-aab3f3496755.jpg?v=1751322502000",
+            },
             {
                 "id":"2",
                 "name":"Curso de Introducción a MongoDB",
