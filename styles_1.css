@@ -571,6 +571,37 @@ body, #container {
   flex-wrap: wrap;
 }
 
+.header_proyectos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header_proyectos li {
+  cursor: pointer;
+}
+
+.type_proyect {
+  list-style: none;
+  width:53%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.type_proyect h4{
+  padding: 5px;
+  border-radius: 5px;
+  width: 7em;
+  border: 1px solid #d447a0;
+  color: #d447a0;
+}
+
+.type_proyect h4:hover{
+  transform: scale(1.1);
+}
+
 /* Estilos para tablets y dispositivos más pequeños */
 @media (max-width:  768px) {
 
@@ -586,6 +617,26 @@ body, #container {
     padding: 0;
     background: var(--colo-2);
     
+  }
+
+  #proyects {
+    align-items: center;
+  }
+
+  .type_proyect{
+    padding: 0;
+  }
+
+  .type_proyect{
+    width: 100%;
+  }
+  .header_proyectos{
+    width: 90%;
+  }
+
+  .type_proyect h4{
+    padding: 15px 5px;
+    width: 18.5vw;
   }
 
   #menuRespons {
@@ -792,7 +843,7 @@ body, #container {
   
 }
 
-@media (min-width: 768px) and (max-width: 1080px) {
+@media (min-width: 769px) and (max-width: 1080px) {
   /* Estilos para tablets */
   .titlePage{
     display: none;
@@ -860,6 +911,17 @@ body, #container {
   .Softskill{
     width: 18%;
   }
+
+  .type_proyect{
+    width: 90%;
+    padding: 0;
+  }
+
+  .type_proyect h4{
+    width: 7.5em;
+    padding: 10px 5px;
+  }
+
   .cardProyect {
     width: 47%;
     margin-bottom: 4%;
@@ -919,7 +981,12 @@ body, #container {
 
 }
 
-@media (min-width: 1081px) and (max-width: 1400px) {
+@media (min-width: 1081px) and (max-width: 1300px) {
+
+  .type_proyect{
+    padding: 0;
+    width: 60%;
+  }
 
 	.opeWork {
 	  width: 23%;

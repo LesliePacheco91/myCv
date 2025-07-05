@@ -147,11 +147,11 @@ export default{
            },
             
           {
-             "institution":"Bootcamp Laboratoria",
+            "institution":"Bootcamp Laboratoria",
             "degree": "Desarrollo web",
             "startDate": "2023",
             "endDate": "2024",
-              "info":"Bootcamp intensivo de 6 meses, donde adquirí habilidades técnicas como desarrolladora front-end y habilidades blandas mediante el autoaprendizaje en un entorno de sororidad y apoyo mutuo entre mujeres. Desarrollamos proyectos simulando un ambiente laboral de manera remota.",
+            "info":"Bootcamp intensivo de 6 meses, donde adquirí habilidades técnicas como desarrolladora front-end y habilidades blandas mediante el autoaprendizaje en un entorno de sororidad y apoyo mutuo entre mujeres. Desarrollamos proyectos simulando un ambiente laboral de manera remota.",
             "url": "img/laboratora.pdf",
           },
           {
@@ -324,6 +324,7 @@ export default{
             {
                 "id":"1",
                 "name":"Text Analiser",
+                "type":"Front-End",
                 "description":"Aplicación que tiene la finalidad de analizar un texto en el navegador mostrando en tiempo real una serie de indicadores y métricas específicas sobre caracteres, letras y números.",
                 "image":"img/portafolio/Screenshot1.png",
                 "url":"https://lesliepacheco91.github.io/DEV011-text-analyzer/",
@@ -351,8 +352,9 @@ export default{
             }, {
                 "id":"2",
                 "name":"Sistema de evaluación docente",
+                "type":"Full-Stak",
                 "description":"Aplicación web para la automatización del proceso de evaluación docente en la Universidad Tecnológica del Mayab Esta aplicación permite a estudiantes, profesores y personal administrativo realizar evaluaciones mediante un formulario web. Los resultados se procesan automáticamente a través de operaciones matemáticas y se presentan de forma clara y comprensible. La plataforma admite sesiones multiusuario, lo que permite a cada evaluador acceder a su perfil personalizado. En el caso del perfil del profesor, se añadió un módulo para la solicitud de restricción de horario, donde puede seleccionar los días y horarios en los que no podrá asistir. Esta funcionalidad está disponible únicamente para profesores por asignatura (horarios variables) y no aplica para profesores de tiempo completo.",
-                 "achievements":"La plataforma ha incrementado la eficiencia del proceso en un 60%, eliminando completamente el error humano y centralizando la información en una base de datos, lo que permitió reemplazar los extensos formatos en Excel utilizados anteriormente. Los resultados se generan en tiempo real, y al concluir el periodo de evaluación, el sistema produce automáticamente un formato listo para imprimirse y entregarse al profesor evaluado, incluyendo sus áreas de oportunidad.",
+                "achievements":"La plataforma ha incrementado la eficiencia del proceso en un 60%, eliminando completamente el error humano y centralizando la información en una base de datos, lo que permitió reemplazar los extensos formatos en Excel utilizados anteriormente. Los resultados se generan en tiempo real, y al concluir el periodo de evaluación, el sistema produce automáticamente un formato listo para imprimirse y entregarse al profesor evaluado, incluyendo sus áreas de oportunidad.",
                 "image":"img/portafolio/2.png",
                 "repository":"https://github.com/LesliePacheco91/EVDOCENTE.git",
                 "languales":[
@@ -397,6 +399,7 @@ export default{
             {
                 "id":"3",
                 "name":"Data Lovers",
+                "type":"Front-End",
                 "description":"La aplicación proporciona información organizada y accesible sobre los personajes de la serie 'Rick y Morty'. Sus características principales incluyen la exhibición de tarjetas de personajes en la pantalla principal, capacidad de filtrado según género, estado de vida y especie, ordenamiento de resultados de manera ascendente o descendente, un botón de limpieza de filtros, presentación de datos estadísticos y acceso a detalles adicionales de cada personaje. Se realizaron pruebas unitarias utilizando la herramienta Jest y se obtuvo un 95 % de aceptación.",
                 "image":"img/portafolio/img1.png",
                 "achievements":"Además de lograr los objetivos de aprendizaje, como equipo nos retamos en incluir datos estadísticos mediante gráficos y filtrar los elementos de manera ascendente utilizando 2 elementos en lugar de uno, logramos alcanzar un índice de aceptación del 95% de las pruebas unitarios.",
@@ -437,6 +440,7 @@ export default{
             }, {
                 "id":"4",
                 "name":"Social NetWork ",
+                "type":"Full-Stak",
                 "description":"Red social para la publicación de reseñas gastronómicas, donde los usuarios pueden opinar sobre diversos establecimientos culinarios. Cada reseña incluye elementos como la calificación y la ubicación del lugar. La plataforma permite expresar aprobación mediante la función de 'Me gusta' y otorga a los autores la capacidad de editar o eliminar sus publicaciones. El acceso a la aplicación se realiza a través de credenciales de usuario y contraseña, o mediante una cuenta de Google. Se realizaron pruebas unitarias utilizando la herramienta Jest, con un 85 % de aceptación.",
                 "achievements":"Además de lograr los objetivos de aprendizaje, como equipo utilizamos ventanas emergentes y diversos iconos para mayor interactividad y mejor visualización de las calificaciones y se logró mas del 80 % se aceptación de las pruebas unitarios",
                 "image":"img/portafolio/gastroTour.png",
@@ -488,6 +492,7 @@ export default{
             },  {
                 "id":"5",
                 "name":"MdLinks",
+                "type":"Back-End",
                 "description":"Librería que tiene como objetivo leer archivos Markdown, analizar su contenido, listar los enlaces que contienen, validar estos enlaces y mostrar sus estados, además de proporcionar datos estadísticos. La librería fue desplegada en la plataforma NPMJS.",
                 "achievements":"Además de alcanzar los objetivos de aprendizaje, logré que los test unitarios superaran el 90% de efectividad.",
                 "image":"img/portafolio/mdl2.png",
@@ -529,6 +534,7 @@ export default{
             {
                 "id":"6",
                 "name":"Burger queen api",
+                "type":"Back-End",
                 "description":"Esta API REST maneja consultas entrantes y proporciona datos obtenidos de la base de datos y del front-end a través de protocolos HTTPS. El proyecto fue desarrollado utilizando Node.js y MongoDB como base de datos. Además, se implementó JSON Web Tokens (JWT) para la encriptación de la información transmitida y para asegurar la autenticidad de las respuestas en las comunicaciones HTTPS.",
                 "achievements":"Gracias a los middlewares, se gestionaron correctamente los permisos de acceso a la información para cada usuario que inicia sesión, además de asegurar la seguridad de los datos mediante la implementación de tokens. Se logró un 90% de aceptación en las pruebas unitarias de extremo a extremo.",
                 "image":"img/portafolio/BurgerQueen2.png",
@@ -547,7 +553,7 @@ export default{
                         "color":"#f886536e"
                     },
                     {
-                       "id":"3",
+                        "id":"3",
                         "image":"devicon-javascript-plain colored",
                         "name":"JavaScript",
                         "color":"rgba(236, 221, 125, 0.32)"
@@ -587,6 +593,7 @@ export default{
             {
                 "id":"7",
                 "name":"Sistemas de administracion de Banquetes",
+                "type":"Full-Stak",
                 "description":"Sistema web para gestionar rentas y cotizaciones de mobiliario y equipo de banquetes que incluye registro de usuarios, categorización de productos, gestión de clientes y un módulo de rentas y cotizaciones. Se logró optimizar la gestión de rentas y cotizaciones y administrar diversas sucursales desde una sola sede.El reto consistió en recopilar información, definir los requerimientos del cliente y plasmarlos en el desarrollo de cada módulo de la aplicación. ",
                 "image":"img/portafolio/altaporta.png",
                 "languales":[
@@ -631,6 +638,7 @@ export default{
             {
                 "id":"8",
                 "name":"Pagina web La Michoacana",
+                "type":"Full-Stak",
                 "description":"Aplicación web que permite el registro, modificación y eliminación de productos, así como el control de inventario y la gestión de ventas en tiempo real. Además, incluye funcionalidades de inicio de sesión para distintos tipos de usuarios, control de accesos, aplicando el modelo Vista-Controlador (MVC) y programación orientada a objetos para asegurar una estructura clara y escalable. El sistema fue diseñado con un enfoque en la usabilidad y la eficiencia operativa.",
                 "image":"img/portafolio/LaMichoacana1.png",
                 "repository":"https://github.com/LesliePacheco91/laMichoacana",
@@ -676,6 +684,7 @@ export default{
             {
                 "id":"9",
                 "name":"API REST SpotiAPI",
+                "type":"Back-End",
                 "description":"Aplicación web que permite el registro, modificación y eliminación de productos, así como el control de inventario y la gestión de ventas en tiempo real. Además, incluye funcionalidades de inicio de sesión para distintos tipos de usuarios, control de accesos, aplicando el modelo Vista-Controlador (MVC) y programación orientada a objetos para asegurar una estructura clara y escalable. El sistema fue diseñado con un enfoque en la usabilidad y la eficiencia operativa.",
                 "image":"img/portafolio/spoty.png",
                 "url":"https://stark-sea-43598-52d86e080b07.herokuapp.com/documentation/",
@@ -694,7 +703,7 @@ export default{
                         "color":"#f886536e"
                     },
                     {
-                       "id":"3",
+                        "id":"3",
                         "image":"devicon-javascript-plain colored",
                         "name":"JavaScript",
                         "color":"rgba(236, 221, 125, 0.32)"
@@ -741,7 +750,7 @@ export default{
                         "name":"Swagger",
                         "color":"#c6eca5"
                     },
-                     {
+                    {
                         "id":"11",
                         "image":"devicon-express-original-wordmark",
                         "name":"Express",
@@ -751,16 +760,15 @@ export default{
             }
         ],
         "languages": [
-          {
+            {
             "language": "Español",
             "level": "Nativo"
-          },
-          {
+            },
+            {
             "language": "Inglés",
             "level": "Intermedio"
-          }
+            }
         ]
       }
-      
     
 }

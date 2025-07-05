@@ -1,4 +1,3 @@
-
 import data from './data.js';
 
 const arrayData = data.abount;
@@ -202,16 +201,44 @@ sectionAboutme.append(photoinfo, aboutme, socilaRed);
 let proyectSection = document.createElement('section');
 proyectSection.setAttribute('id', 'proyects');
 
+let headerProyect = document.createElement('div');
+headerProyect.className = "header_proyectos";
+
 let titleProyects = document.createElement('h1');
 titleProyects.textContent = "Proyectos";
+
+let menuTypeProyects = document.createElement('ul');
+menuTypeProyects.setAttribute('class', 'type_proyect');
+
+// lista de los tipos de proyectos
+const type = ["todo", "Front-End", "Back-End", "Full-Stak"];
+
+type.forEach((element) => {
+    
+
+    let typeProyect = document.createElement('li');
+    typeProyect.className ="type_Proyect";
+    typeProyect.innerHTML = `<h4>${element}</h4>`;
+    typeProyect.setAttribute("id", `${element}`);
+
+    menuTypeProyects.append(typeProyect);
+});
+
+
+headerProyect.append(titleProyects, menuTypeProyects);
 
 let listProtects = document.createElement('ul');
 listProtects.className = "list-proyects";
 
-
 // modalDetalle 
+// funcion para renderizar los proyectos
 
-arrayData.proyects.forEach(doc =>{
+function renderizaProyectos(dataList){
+
+    listProtects.innerHTML = '';
+
+
+    dataList.forEach(doc =>{
 
     let dataProyect = document.createElement('li');
     dataProyect.className ="cardProyect";
@@ -270,6 +297,7 @@ arrayData.proyects.forEach(doc =>{
         lisLenguale.append(languaje);
         
     });
+
 
   // ver sitio
     let urlProyect = document.createElement('a');
@@ -367,7 +395,28 @@ arrayData.proyects.forEach(doc =>{
 });
 
 
-proyectSection.append(titleProyects, listProtects);
+
+return listProtects;
+}
+
+
+function filtrarProyectos(tipo){
+
+    if(tipo === "todo"){
+        renderizaProyectos(arrayData.proyects);
+        
+    }else{
+       
+         const proyectosFiltrados = arrayData.proyects.filter(p => p.type === tipo);
+
+         renderizaProyectos(proyectosFiltrados);
+
+    }
+}
+
+renderizaProyectos(arrayData.proyects);
+
+proyectSection.append(headerProyect, listProtects);
 
 
 // curse section
@@ -593,6 +642,7 @@ lis6.addEventListener('click', function(event) {
 // cambio de color
 let bodyContend = document.querySelector('#container');
 let btnUrl= document.querySelectorAll('.btn-url');
+let filter_proyect = document.querySelectorAll('.type_proyect h4');
 let urlProyect = document.querySelectorAll('.urlProyect');
 let urlRespository = document.querySelectorAll('.urlRespository');
 let cardProyect = document.querySelectorAll('.cardProyect');
@@ -609,10 +659,9 @@ let dataEduc = document.querySelectorAll(".education");
 
 
 buttonLigth.addEventListener('click', function(event) {
-
-    photo.src = "img/leslieP.jpg";
     event.preventDefault(); 
-
+    photo.src = "img/leslieP.jpg";
+    
     imgTrailhead.src = 'img/Trailhead.png';
 
     imgMenuResponsive.style.color = "#7D7ED5";
@@ -651,7 +700,10 @@ buttonLigth.addEventListener('click', function(event) {
         btn.style.background = "#5296E6";
     });
     
-    
+    filter_proyect.forEach(py => {
+        py.style.border =  "1px solid #d447a0";
+        py.style.color = "#d447a0";
+    });
     
     urlProyect.forEach(urlP =>{
         urlP.style.border = "1px solid #000";
@@ -740,7 +792,11 @@ buttonHigh.addEventListener('click', function(event) {
     dataEduc.forEach(element => {
         element.style.borderLeft = "4px solid #330867";
     });
-   
+
+    filter_proyect.forEach(fil => {
+        fil.style.border = "1px solid #fff";
+        fil.style.color = "#fff";
+    });
     
     cardProyect.forEach(card => {
     card.style.background = "#330867";
@@ -750,8 +806,6 @@ buttonHigh.addEventListener('click', function(event) {
         btn.style.background = "#30CFD0";
     });
     
-   
-   
     urlProyect.forEach(urlP =>{
         urlP.style.border = "1px solid #fff";
         urlP.style.color = "#fff";
@@ -805,5 +859,62 @@ emailContact.addEventListener('click', function(event){
 
     // Redirige al cliente de correo
     window.location.href = enlaceCorreo;
-})
+});
+
+
+// FILTRAR PROYECTOS POR TIPO
+const bottom_filter = document.querySelectorAll(".type_Proyect");
+bottom_filter.forEach(btn => {
+
+    let cardProyect = document.querySelectorAll('.cardProyect');
+        
+    btn.addEventListener('click', function(event) {
+        filtrarProyectos(btn.id);
+
+        const estilo =getComputedStyle(buttonLigth);
+        const estiloOscuro =getComputedStyle(buttonHigh);
+
+        
+
+        if(estilo.display === "none"){
+            buttonLigth.click();
+            console.log("esta activo modo claro")
+    
+        }else if(estiloOscuro.display === "none"){
+           
+
+        const proyecto = document.querySelectorAll('.cardProyect');
+        const btnUrl= document.querySelectorAll('.btn-url');
+        const urlRespository = document.querySelectorAll('.urlRespository');
+        const urlProyect = document.querySelectorAll('.urlProyect');
+        
+        
+        proyecto.forEach(card => {
+            card.style.background = "#330867";
+        });
+
+        btnUrl.forEach(btn => {
+            btn.style.background = "#30CFD0";
+        });
+        
+        urlProyect.forEach(urlP =>{
+            urlP.style.border = "1px solid #fff";
+            urlP.style.color = "#fff";
+        })
+        
+
+        urlRespository.forEach(repo => {
+            repo.style.border = "1px solid #fff";
+            repo.style.color = "#fff";
+        });
+    
+        buttonHigh.click();
+        
+            console.log("esta activo modo oscuro")
+        }
+    });
+
+    
+    
+});
 
