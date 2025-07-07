@@ -656,6 +656,7 @@ let redes = document.querySelectorAll('.redes a');
 let menuActive = document.querySelector('.menuActive');
 let dataCursos = document.querySelectorAll(".curse");
 let dataEduc = document.querySelectorAll(".education");
+let type_proyects = document.querySelectorAll(".type_Proyect");
 
 
 buttonLigth.addEventListener('click', function(event) {
@@ -669,6 +670,11 @@ buttonLigth.addEventListener('click', function(event) {
     bodyContend.style.background = "linear-gradient(137deg, rgba(224, 195, 252, 1) 0%, rgba(142, 197, 252, 1) 100%)";
     buttonLigth.style.display = "none";
     buttonHigh.style.display = "block";
+
+    type_proyects.forEach(div =>{
+        div.style.border = "2px solid  #d447a0";
+        div.style.color = "#d447a0";
+    })
     
     sectionAboutme.style.color = "#000";
     proyectSection.style.color = "#000";
@@ -763,6 +769,11 @@ buttonHigh.addEventListener('click', function(event) {
    bodyContend.style.background = "linear-gradient(90deg, rgb(25, 120, 124) 0%, rgb(51, 8, 103) 43%)";
     buttonLigth.style.display = "block";
     buttonHigh.style.display = "none";
+
+    type_proyects.forEach(div =>{
+        div.style.border = "2px solid  #fff";
+        div.style.color = "#fff";
+    });
 
     header.style.background = "#30CFD0";
     opeToWord.style.background = "#30CFD0";
