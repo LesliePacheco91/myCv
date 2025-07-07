@@ -61,9 +61,16 @@ export default{
             ]
           }
         ],
-        "couses":[
+        "couses":
              {
                 "id":"2",
+                "name":"Curso de Git y Github: GIT PROFESIONAL desde cero.",
+                "date":" 07/007/2025",
+                "academy":"Udemy",
+                "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-928abdd4-fb7d-434c-961d-391b9e9c66da.jpg?v=1751931209000",
+            },
+             {
+                "id":"1",
                 "name":"API REST Nodejs desde cero usando MongoDB o MySQL",
                 "date":" 30/06/2025",
                 "academy":"Udemy",
