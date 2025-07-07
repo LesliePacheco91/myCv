@@ -582,26 +582,31 @@ body, #container {
   cursor: pointer;
 }
 
-.type_proyect {
+.list_type_proyect {
   list-style: none;
   width:53%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
+  padding: 0;
 }
 
-.type_proyect h4{
-  padding: 5px;
+.type_Proyect{
   border-radius: 5px;
-  width: 7em;
+   width: 22%;
   border: 1px solid #d447a0;
   color: #d447a0;
+  align-content: center;
+  display: block;
+  font-weight: bold;
+  
 }
 
-.type_proyect h4:hover{
+.type_proyect:hover{
   transform: scale(1.1);
 }
-
 /* Estilos para tablets y dispositivos más pequeños */
 @media (max-width:  768px) {
 
@@ -623,20 +628,22 @@ body, #container {
     align-items: center;
   }
 
-  .type_proyect{
-    padding: 0;
+  .list_type_proyect{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
-  .type_proyect{
-    width: 100%;
+  .type_Proyect{
+    width: 40%;
+    padding: 8px;
+    margin-bottom: 8px;
   }
+
   .header_proyectos{
     width: 90%;
-  }
-
-  .type_proyect h4{
-    padding: 15px 5px;
-    width: 18.5vw;
   }
 
   #menuRespons {
@@ -911,15 +918,14 @@ body, #container {
   .Softskill{
     width: 18%;
   }
-
-  .type_proyect{
-    width: 90%;
-    padding: 0;
+.header_proyectos{
+  flex-wrap: initial;
+}
+  .list_type_proyect{
+    width: 70%;
   }
-
-  .type_proyect h4{
-    width: 7.5em;
-    padding: 10px 5px;
+  .type_Proyect{
+    width: 23%;
   }
 
   .cardProyect {

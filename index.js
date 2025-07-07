@@ -208,7 +208,7 @@ let titleProyects = document.createElement('h1');
 titleProyects.textContent = "Proyectos";
 
 let menuTypeProyects = document.createElement('ul');
-menuTypeProyects.setAttribute('class', 'type_proyect');
+menuTypeProyects.setAttribute('class', 'list_type_proyect');
 
 // lista de los tipos de proyectos
 const type = ["todo", "Front-End", "Back-End", "Full-Stak"];
@@ -218,7 +218,7 @@ type.forEach((element) => {
 
     let typeProyect = document.createElement('li');
     typeProyect.className ="type_Proyect";
-    typeProyect.innerHTML = `<h4>${element}</h4>`;
+    typeProyect.innerHTML = `${element}`;
     typeProyect.setAttribute("id", `${element}`);
 
     menuTypeProyects.append(typeProyect);
