@@ -61,7 +61,7 @@ export default{
             ]
           }
         ],
-        "couses":
+        "couses":[
              {
                 "id":"2",
                 "name":"Curso de Git y Github: GIT PROFESIONAL desde cero.",
